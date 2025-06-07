@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+}
+:root{
+  --navbar-link: whitesmoke;
+}
+.navbar-container, .navbar-links li, .page-landing{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-name{
+  width: 30%;
+}
+.navbar-name h2{
+  color: var(--navbar-link);
+}
+.navbar-container{
+  background-image:url('../public/assets/sampada-background.png');
+  background-size: cover;
+}
+.navbar-links{
+  display: flex;
+  justify-content:flex-start;
+  align-items:stretch;
+  gap: 2rem;
+  padding: 0 3rem;
+  width:65%;
+  height: 300px;
+}
+.navbar-links ul{
+  padding: 10px;
+  margin:0;
+  list-style:none;
+  display:flex;
+  gap: 4rem;
+}
+.navbar-links a{
+  color: var(--navbar-link);
+  text-decoration: none;
+  cursor:pointer;
+}
+/*-------------------landing formatting for home page ---------------*/
+.page-landing{
+  justify-content: center;
+  flex-direction: row;
+  margin: 10px 0px;
+}
+.landing-headshot{
+  width: 45%;
+  height: auto;
+}
+.landing-headshot img{
+  width: 100%;
+  height: auto;
+}
+.landing-information{
+  width: 55%;
+}
