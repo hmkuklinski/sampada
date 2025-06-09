@@ -10,6 +10,7 @@ import Publications from './components/Publications';
 import Thesis from './components/Thesis';
 import {Route, Routes} from "react-router-dom";
 function App() {
+    
   return (
     <div className="App">
       <div className="app-container">

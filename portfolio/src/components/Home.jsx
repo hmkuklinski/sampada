@@ -1,10 +1,10 @@
 import Layout from "./Layout";
-import PageLanding from "./PageLanding";
+import AboutLanding from "./AboutLanding";
 export default function Home(){
     return (
         <Layout>
             <div className="page-container">
-                <PageLanding />
+                <AboutLanding />
             </div>
         </Layout>
     );
