@@ -70,8 +70,6 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  filter:grayscale(100%);
-  filter:brightness(0%);
 }
 .social-link{
   gap: 3rem;
@@ -101,14 +99,198 @@
 }
 .about-information{
   height: 350px;
+  text-align:justify;
 }
 .about-photo img{
   width: 100%;
 }
-.about-heading h2{
+.about-heading h2, .project-title h2{
   margin:0;
 }
-.about-subheading h4{
+.about-subheading h4, .project-subtitle h4{
   font-weight: 400;
   margin: 0;
+}
+.about-heading h2, .about-subheading h4{
+  text-align:center;
+}
+
+.project-title h2, .project-subtitle h4{
+  text-align:left;
+}
+
+/*------------------- timeline formatting -------------------*/
+.timeline-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:row;
+  height:auto;
+  /* margin-top: 50px; */
+}
+.timeline-information{
+  padding: 8px;
+  text-align:justify;
+
+}
+.timeline-image{
+  width: 50%;
+}
+.timeline-image img{
+  height: 200px;
+  width: 100%;
+}
+
+/* -------------------formatting for header- with underline and circle display-------------------*/
+
+.header-wrapper {
+  text-align: center;
+  position: relative;
+  left: 15%;
+  margin: 0;
+}
+
+.header-text {
+  margin: 0;
+  font-size: 2rem;
+  position: relative;
+}
+
+.underline {
+  width: 20%;
+  height: 2px;
+  background-color: #333;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ------------------- project card formatting-------------------*/
+.project-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 15px 0px;
+  width: 100%;
+  padding: 8px;
+  height: 240px;
+}
+.project-content{
+  text-align: justify;
+  width: 80%;
+  padding: 8px;
+  margin: 0px 25px 0px 0px;
+  height:100%;
+}
+/* project description div*/
+.project-info{
+  margin-top: 50px;
+}
+/* project title div*/
+.project-title{
+  margin-top: 30px;
+}
+.project-image{
+  width: 30%;
+}
+.project-image img{
+  width: 100%;
+}
+/* to change positioning of header h2 element*/
+.current-projects .header-wrapper{
+  left: 0px;
+  margin: 50px 0px;
+}
+
+.project-link a, .show-search {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+
+/* ------------------- search option formatting-------------------*/
+.search-option{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position:relative;
+  left: 13%;
+  margin-top: 20px;
+  width: 80%;
+  height: 40px;
+}
+.search-input{
+  width: 40%;
+}
+
+.search-option input{
+  height: 20px;
+  width: 100%;
+  text-align: center;
+}
+.search-option button{
+  height: 28px;
+  margin-left: 20px;
+}
+
+.search-x{
+  position: relative;
+  right: 2%;
+  height: 25px;
+  cursor:pointer;
+  background-color: transparent;
+}
+
+
+
+
+/* ------------------- error message formatting-------------------*/
+.error-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 20%;
+  height: 90px;
+  z-index: 100;
+  border-radius: 12px;
+  box-shadow: 3px 2px 3px;
+  border: 1px solid black;
+  margin-top: 50px;
+  width: 60%;
+  padding: 10px;
+}
+.error-header{
+  margin-top: 20px;
+}
+.error-header h2{
+  margin:0;
+}
+.error-button{
+  position:relative;
+  left: 40%;
+  bottom: 80px;
+  cursor:pointer;
+}
+
+.show-search{
+  margin-top: 15px;
+  position:relative;
+  right: 40%;
 }
