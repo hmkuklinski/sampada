@@ -63,7 +63,7 @@ export default function Projects(){
                 </div>
                 <div className="current-content">
                     {sampadaProjects.map((project)=>(
-                        <Project photo={project.photo} title={project.id} description={project.info} link={project.link} subtitle={project.subtitle} tags={project.tags} status={project.status}/>
+                        <Project photo={project.photo} title={project.id} description={project.info} link={project.link} subtitle={project.subtitle} tags={project.tags}/>
                     ))}
                 </div>
             </div>
@@ -76,7 +76,7 @@ export default function Projects(){
                 </div>
                 <div className="current-content">
                     {sampadaUpcoming.map((project)=>(
-                        <Project photo={project.photo} title={project.id} description={project.info} link={project.link} subtitle={project.subtitle} tags={project.tags} status={project.status}/>
+                        <Project photo={project.photo} title={project.id} description={project.info} link={project.link} subtitle={project.subtitle} tags={project.tags}/>
                     ))}
                 </div>
             </div>
@@ -89,7 +89,7 @@ export default function Projects(){
         <div className="page-container">
              <div className="current-content">
                 {filteredProjects.map((project)=>(
-                    <Project photo={project.photo} title={project.id} description={project.info} link={project.link} subtitle={project.subtitle} tags={project.tags} status={project.status}/>
+                    <Project photo={project.photo} title={project.id} description={project.info} link={project.link} subtitle={project.subtitle} tags={project.tags}/>
                 ))}
             </div>
         </div>
@@ -132,16 +132,9 @@ export default function Projects(){
         </div>
     );
 
-    // const showSearchBtn = (
-    //     <div className="show-search" onClick={()=>{setShowSearch(true)}}>
-    //         Search Projects <ion-icon name="search-outline"></ion-icon>
-    //     </div>
-    // );
 
     return (
         <Layout>
-            {/* {!showSearch && showSearchBtn} */}
-            {/* {showSearch && searchOption} */}
             {searchOption}
 
             {/* if the error message needs to be displayed, render errorMessage jsx */}
