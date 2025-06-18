@@ -1,4 +1,22 @@
-export default function Project({photo, link, title, subtitle, description, tags, status}){
+import { sampadaName } from "../sampadaInfo";
+
+export default function Project({photo, link, title, subtitle, description}){
+    const fullName = sampadaName;
+    const nameParts = fullName.split(" "); // ["Sampada", "Acharya"]
+    const firstLast = fullName;
+    const lastFirst = `${nameParts[1]}, ${nameParts[0]}`; // "Acharya, Sampada"
+
+    let parts;
+    let matchedName;
+
+    if (subtitle.includes(firstLast)) {
+        parts = subtitle.split(firstLast);
+        matchedName = firstLast;
+    } else if (subtitle.includes(lastFirst)) {
+        parts = subtitle.split(lastFirst);
+        matchedName = lastFirst;
+    }
+
     return (
         <div className="project-container">
             <div className="project-image">
@@ -8,30 +26,27 @@ export default function Project({photo, link, title, subtitle, description, tags
                 <div className="project-title">
                     <h2>{title}</h2>
                 </div>
-                <div className="project-subtitle">
-                    <h4>{subtitle}</h4>
+               <div className="project-subtitle">
+                    <h4>
+                        {matchedName ? (
+                            <>
+                                {parts[0]}
+                                <strong>{matchedName}</strong>
+                                {parts[1]}
+                            </>
+                        ) : (
+                            subtitle
+                        )}
+                    </h4>
                 </div>
                 <div className="project-info">
                     <div className="project-text">
-                        {/* {description} */}
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quisquam delectus molestias officia nulla iste tempora repellat ea alias laborum corrupti, voluptate ex rerum? Culpa quo alias ipsum? Accusantium, deleniti?</p>
+                        {description}
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illum tempora sit quas omnis voluptates nemo expedita perspiciatis voluptatum maiores obcaecati eius magnam aut, molestiae ullam. Nihil laudantium debitis sed.</p>
                     </div>
                     <div className="project-link">
-                        <a href={link}>Read More <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                        <a href={link} target="_blank" rel="noopener noreferrer">Read More <ion-icon name="chevron-forward-outline"></ion-icon></a>
                     </div>
-
-                    {/* <div className="project-status">
-                        {status === "completed" && (
-                            <div className="status-completed">
-                                <b>Status: </b> Completed <ion-icon name="checkmark-outline"></ion-icon>
-                            </div>
-                        )}
-                        {status === "incomplete" && (
-                            <div className="status-incomplete">
-                                <b>Status: </b> In Progress <ion-icon name="timer-outline"></ion-icon>
-                            </div>
-                        )}
-                    </div> */}
                 </div>
             </div>
         </div>
