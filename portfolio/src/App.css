@@ -5,38 +5,56 @@
   --navbar-link: whitesmoke;
 }
 /*----------------------------navbar formatting ---------------------------*/
-.navbar-container, .navbar-links li, .page-landing{
-  display:flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-.navbar-name{
-  width: 30%;
-}
-.navbar-name h2{
-  color: var(--navbar-link);
-  font-size: 25px;
-  padding: 0;
-}
 .navbar-container{
   background-image:url('../public/assets/sampada-bckgrnd.png');
   background-size: cover;
   height: 250px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
+.navbar-container, .navbar-links li, .page-landing{
+  display:flex;
+  align-items: flex-start;
+  justify-content:space-between;
+}
+/* formatting for Sampada's Name in Navbar*/
+.navbar-name{
+  flex: 1 1 100px;
+  min-width: 100px;
+  height: 80px;
+}
+.navbar-name h2{
+  color: var(--navbar-link);
+  font-size: 22px;
+  padding: 3px;
+}
+/* get rid of link underline for sampada's name*/
+.navbar-name a{
+  text-decoration:none;
+}
+
+/* container that holds the ul of navlinks*/
 .navbar-links{
+  flex: 2 1 400px;
+  min-width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  width:65%;
-  font-size: 20px;
+  height: 80px;
+  font-size: 18px;
 }
 .navbar-links ul{
   padding: 25px;
   margin:0;
   list-style:none;
   display:flex;
-  gap: 4rem;
+  gap: 1rem;
+  width: 100%;
+}
+.navbar-links li{
+  flex: 1;
 }
 .navbar-links a{
   color: var(--navbar-link);
@@ -185,8 +203,8 @@
   flex-direction: row;
   margin: 30px 0px;
   width: 100%;
-  padding: 8px;
-  height: 240px;
+  padding: 12px 5px;
+  height: auto;
 }
 .project-content{
   text-align: justify;
@@ -199,11 +217,10 @@
 #publication-container .project-content{
   width: 90%;
   padding: 18px;
-  height: 120px;
+  height: auto;
 }
 #publication-container {
   margin: 30px 0px;
-  height: 150px;
 }
 /* project description div*/
 .project-info{
@@ -311,4 +328,165 @@
   margin-top: 15px;
   position:relative;
   right: 40%;
+}
+
+
+/* ------------------- mobile formatting-------------------*/
+@media (max-width: 768px){
+  /* holds the name and hamburger menu option*/
+  .navbar-container{
+    height: 200px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .navbar-name{
+    min-width: 70%;
+    padding: 0px;
+  }
+  .navbar-name h2{
+    font-size: 26px;
+    padding: 0px;
+  }
+  /*formatting for div that holds hamburger button*/
+  .nav-button{
+    width: 20%;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    z-index: 100;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* formatting for div containing ul and li elements*/
+  .nav-links{
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+    width: 100%;
+    position: absolute;
+    top: 160px;
+    left: 0px;
+    z-index: 100;
+    background-color:whitesmoke;
+  }
+  .nav-links ul{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    list-style:none;
+  }
+  .nav-links li{
+    cursor:pointer;
+    padding: 10px;
+    gap: 4rem;
+    text-align:center;
+    width: 50%;
+  }
+  /*formatting for li text display*/
+  .nav-links li a{
+    color: #333;
+    text-decoration:none;
+  }
+  /*formatting for the hamburger menu button itself*/
+  .hamburger{
+    width: 100%;
+    height:inherit;
+    background:none;
+    border:none;
+    color: whitesmoke;
+    cursor:pointer;
+    font-size: 26px;
+  }
+  .hamburger:hover{
+    transition: 0.6s ease-in;
+    background-color: transparent;
+  }
+  /*formatting for home landing*/
+  .about-container, .timeline-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    padding: 6px;
+    margin-bottom: 15px;
+  }
+  .about-left, .about-information{
+    height: auto;
+  }
+  .about-information{
+    padding: 8px;
+  }
+  /*format for section headers*/
+  .header-wrapper {
+    text-align: center;
+    position: relative;
+    left: 0;
+    margin: 0;
+    padding: 10px 0px;
+  }
+  /*formatting for timeline section*/
+  .timeline-image{
+    width: 100%;
+    height: 220px;
+  }
+  /*individual projects/publications container formatting*/
+  .project-container{
+    flex-direction: column;
+    margin: 15px 0px;
+  }
+  /*extra spacing for the title/subtitle of the publications and projects */
+  .project-title{
+    margin: 5px 0px;
+  } 
+  .project-subtitle{
+    margin: 10px 0px;
+  }
+  /* text aligning for the title and subtitle*/
+  .project-title h2, .project-subtitle h4{
+    text-align:center;
+  }
+  /*contains all content for publications and projects- title, authors/subtitle, description, redirect link*/
+  .project-content{
+    width: 90%;
+  }
+  /*contains project or publication description and link*/
+  .project-info{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px 0px;
+    padding: 5px 10px;
+  }
+  /*container that holds visual from the publication or project*/
+  .project-image{
+    width: 93%;
+    height: 40%;
+  }
+  .project-image img{
+    width:100%;
+  }
+  /* formatting for the in progress publications*/
+  #publication-container{
+    height:auto;
+    margin: 15px 0px;
+    padding: 10px;
+    width: 93%;
+  }
+  /* holds all the formatting for the publication's information section*/
+  #publication-container .project-content{
+    height:auto;
+  }
+
+  /* special text formatting for the in progress title/subtitle- justify*/
+  #publication-container .project-title h2, #publication-container.project-subtitle h4{
+    text-align:justify;
+  }
+  
+
 }
