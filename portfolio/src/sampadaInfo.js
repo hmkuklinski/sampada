@@ -46,7 +46,21 @@ export const sampadaUpcomingPublications = [
     {id: "A study of interaction between soft nature-inspired  micropatterned (NIMP) surfaces and contaminants in the environment", authors: ["Sampada Acharya", "David Quinn", "Melinda Chen", "Carmel Majidi"], info:"", photo:"", subtitle:""},
     {id: "Multifunctional Liquid Crystal Elastomer Fibers for Muscle-Inspired Actuation", authors: [" Michael Vinciguerra", "Dinesh Patel", "Sampada Acharya","Kevin St. Luce", "Anthony Wertz", "Jose Hinojosa", "Michael Bennington", "Victoria Webster-Wood", "Lining Yao", "Carmel Majidi"], info:"", photo:"", subtitle:""},
     {id:"Microwave Sintering of Binder-Jetted Alumina Ceramics: An Alternative Route to High- Temperature  Conventional Sintering", authors: ["Bashu Aman","Sampada Acharya", "Alex Gourley", "Tania Slawecki", "Dinesh Agrawal", "Pranjali D. Muley", "B. Reeja Jayan"], info:"", photo:"", subtitle:""}
-]
+];
+
+//SAMPADA AWARDS- 3MINUTE
+export const sampadaTripleAwards = [
+    {id:"award1", title:"2nd Place Award", subtitle:"3  Minute Thesis 2024 Championship", description:"This is a short description of the award."},
+    {id:"award2", title:"People's Choice Award", subtitle:"3  Minute Thesis 2024 Championship", description:"This is a short description of the award."},
+    {id:"award3", title:"Alumni Choice Award", subtitle:"3  Minute Thesis 2024 Championship", description:"This is a short description of the award."}
+];
+
+
+
+
+
+
+
 
 export const allProjects = [...sampadaProjects, ...sampadaUpcoming];
 export const allPublications = [...sampadaPublications, ...sampadaUpcomingPublications];
