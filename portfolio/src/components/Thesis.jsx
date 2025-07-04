@@ -3,7 +3,12 @@ export default function Thesis(){
     return (
         <Layout>
             <div className="page-container">
-                <h2>Thesis- TBD</h2>
+                <div className="thesis-title">
+                    <h2>Thesis</h2>
+                </div>
+                <div className="thesis-text">
+                    <h4>Coming Soon! Please check back later.</h4>
+                </div>
             </div>
         </Layout>
     );

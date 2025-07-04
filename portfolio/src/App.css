@@ -83,6 +83,7 @@
 .landing-keywords{
   margin: 7px 0px;
 }
+
 /*-------------------social link formatting ---------------*/
 .social-link img{
   width: 40px;
@@ -330,6 +331,38 @@
   right: 40%;
 }
 
+/*-------------------triple award landing layout ---------------*/
+.landing-content{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+  position:absolute;
+  left: 40px;
+  bottom: 50px;
+  min-height: 140px;
+  height:auto;
+  width: 95%;
+  border-radius: 12px;
+  background-color: rgba(179, 179, 179, 0.5);
+}
+
+.mini-award-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  width: 30%;
+  margin: 15px;
+}
+.mini-award-header h2, .mini-award-subtitle h5{
+  margin:0;
+}
+.mini-award-subtitle h5{
+  font-style:italic;
+}
+
 
 /* ------------------- mobile formatting-------------------*/
 @media (max-width: 768px){
@@ -486,6 +519,15 @@
   /* special text formatting for the in progress title/subtitle- justify*/
   #publication-container .project-title h2, #publication-container.project-subtitle h4{
     text-align:justify;
+  }
+
+  .landing-content{
+    flex-direction: column;
+    height:auto;
+    width: 60%;
+  }
+  .mini-award-container{
+    width:100%;
   }
   
 
