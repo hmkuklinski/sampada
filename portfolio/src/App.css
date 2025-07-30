@@ -123,9 +123,13 @@
 .about-photo img{
   width: 100%;
 }
-.about-heading h2, .project-title h2{
+.about-heading h2, .project-title h2, .highlight-title h2{
   margin:0;
 }
+.highlight-title h2{
+  font-size: 36px;
+}
+
 .about-subheading h4, .project-subtitle h4{
   font-weight: 400;
   margin: 0;
@@ -228,7 +232,7 @@
   margin-top: 50px;
 }
 /* project title div*/
-.project-title{
+.project-title, .highlight-title{
   margin: 30px 0px 10px 0px;
 }
 .project-image{
@@ -361,6 +365,132 @@
 }
 .mini-award-subtitle h5{
   font-style:italic;
+}
+
+
+
+/* ------------------- AWARD formatting-------------------*/
+#awards, .highlighted-award, #thesis{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+#thesis .header-wrapper {
+  left: 0px;
+  margin:15px;
+  padding: 10px;
+  width: 90%;
+}
+/*holds the awards img, and main award info and subawards*/
+.highlighted-award{
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-top: 3px;
+  
+}
+.highlight-subtitle h4{
+  margin: 0;
+  font-style: italic;
+}
+.highlight-desc p{
+  margin: 10px 0px;
+}
+/* formatting for the highlighted award content- info about contest and subwards*/
+.highlight-content{
+  display:flex;
+  align-items: space-between;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 3px;
+  padding: 0px 4px;
+  width:50%;
+  height: 550px;
+}
+/*formatting for the highlighted award img*/
+.highlight-img{
+  height: 530px;
+  width: 40%;
+  margin: 10px;
+}
+
+.highlight-img img{
+  width: 100%;
+  height:100%;
+  border-radius: 8px;
+}
+
+/* ------------------- highlight award- sub awards formatting-------------------*/
+.highlight-section{
+  margin-top: 20px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  flex-direction: row;
+}
+.highlight-mini{
+  width: 30%;
+  margin: 10px;
+}
+.highlight-content .header-wrapper{
+  left: 0px;
+  margin:20px;
+  padding: 10px;
+}
+.highlight-content .header-wrapper .underline{
+  left: 3%;
+  width: 30%;
+}
+.mini-desc p{
+  font-size: 14px;
+}
+.mini-title h3{
+  font-size: 19px;
+}
+
+
+/* awards header formatting*/
+#merit-awards, #mobile-awards{
+  width: 95%;
+  left: 0px;
+  padding: 12px;
+  margin: 30px 0px 10px 0px;
+}
+.award-container{
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+/* formatting for simple awards */
+#simple-awards{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 6px;
+  padding: 4px;
+  width: 90%;
+}
+#simple-awards .project-title h2, #simple-awards .project-subtitle h4{
+  margin:5px;
+}
+#simple-awards .project-content{
+  width: 100%;
+  padding: 7px;
+}
+#simple-awards .project-info{
+  margin-top: 15px;
+}
+
+#simple-awards .project-text{
+  padding: 6px;
+
 }
 
 
@@ -529,6 +659,56 @@
   .mini-award-container{
     width:100%;
   }
-  
 
+  /* formatting for the highlighted award*/
+  .highlighted-award{
+    flex-direction: column;
+    height:auto;
+    margin: 15px 0px;
+    width: 95%;
+  }
+  .highlight-content{
+    width: 95%;
+    height:auto;
+    margin-bottom: 60px;
+  }
+  .highlight-img{
+    width: 93%;
+    height: 620px;
+  }
+  .highlight-img{
+    object-fit: none;
+  }
+  .highlight-mini{
+    width: 100%;
+    margin: 15px 0px;
+  }
+  .mini-title h3, .mini-desc p{
+    margin:0;
+  }
+  .mini-title h3{
+    font-size: 20px;
+  }
+  .mini-desc p , .highlight-desc p{
+    font-size: 17px;
+  }
+  #merit-awards{
+    margin: 0px 0px 35px 0px;
+  }
+  #simple-awards{
+    width: 95%;
+    padding: 3px;
+  }
+  #simple-awards .project-text{
+    text-align:center;
+  }
+
+}
+@media (max-width: 450px){
+  .highlight-section{
+    flex-direction: column;
+  }
+  .highlight-img{
+    height: 550px;
+  }
 }

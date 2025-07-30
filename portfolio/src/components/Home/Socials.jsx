@@ -1,4 +1,4 @@
-import { sampadaLinks } from "../sampadaInfo";
+import { sampadaLinks } from "../../sampadaInfo";
 
 export default function Socials(){
     return (

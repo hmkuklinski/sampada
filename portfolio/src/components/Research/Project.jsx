@@ -1,5 +1,4 @@
-import { sampadaName } from "../sampadaInfo";
-
+import { sampadaName } from "../../sampadaInfo";
 export default function Project({photo, link, title, subtitle, description}){
     const fullName = sampadaName;
     const nameParts = fullName.split(" "); // ["Sampada", "Acharya"]

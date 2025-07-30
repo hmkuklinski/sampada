@@ -1,4 +1,4 @@
-import { sampadaPhotoPaths } from "../sampadaInfo";
+import { sampadaPhotoPaths } from "../../sampadaInfo";
 
 export default function Timeline(){
     return (
