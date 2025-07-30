@@ -1,5 +1,5 @@
-import { sampadaName } from "../sampadaInfo";
-export default function InProgress({title, authors, description}){
+import { sampadaName } from "../../sampadaInfo";
+export default function InProgress({title, authors, noText=null}){
     return (
         <div className="project-container" id="publication-container">
             <div className="project-content">
@@ -17,9 +17,11 @@ export default function InProgress({title, authors, description}){
                     </h4>
                 </div>
                 <div className="project-info">
-                    <div className="project-text">
-                        Coming Soon
-                    </div>
+                    {noText && (
+                        <div className="project-text">
+                            Coming Soon
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

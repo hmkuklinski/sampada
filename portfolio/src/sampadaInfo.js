@@ -55,13 +55,30 @@ export const sampadaTripleAwards = [
     {id:"award3", title:"Alumni Choice Award", subtitle:"3  Minute Thesis 2024 Championship", description:"This is a short description of the award."}
 ];
 
+//-------- SAMPADA'S HIGHLIGHT AWARD INFORMATION HERE --------
+export const highlightAward = {
+    id:"3minute", imgsrc:"/assets/3min/award.png", title:"3 Minute Thesis", subtitle:"Thursday, March 14, 2024", desc:"Nine doctoral students explained their complex research and its importance in under three minutes during the championship round of Carnegie Mellon University’s Three Minute Thesis (3MT) competition. Sampada is the first person in the history of CMU to win awards in all categories.",
+    awards: [
+        {id:"award1", title:"2nd Place", subtitle:"3  Minute Thesis 2024 Championship", description:"Second Best Presentation"},
+        {id:"award2", title:"People's Choice", subtitle:"3  Minute Thesis 2024 Championship", description:"Most votes received from audience members"},
+        {id:"award3", title:"Alumni Choice", subtitle:"3  Minute Thesis 2024 Championship", description:"Most votes received online from alumni"}
+    ]
+}
+
+
+export const meritAwards = [
+    {id:"doctoral", name:"Scholarly Project Funding", subtitle:"Spring 2025", desc:"Awarded from Carnegie Mellon University for doctoral research work."},
+    {id:"pita-grant", name:"Pennsylvania Infrastructure Technology Alliance Grant", subtitle:"April 18th, 2024", desc:"Led and wrote a successful proposal, titled \"Additive Manufacturing of Calcium Aluminate for Custom-Designed, Implantable, Load Bearing, Resorbable Bone Scaffolds.\""},
+    {id:"fellowship", name:"Center for Machine Learning and Health Fellowship", subtitle:"CMU 2023", desc:"Fellowship for Digital Health Innovation"},
+    {id:"presentations", name:"Outstanding Presentation Award", subtitle:"CMU 2023", desc:"For a proposal made at the Carnegie Mellon Forum on Biomedical Engineering."},
+    {id:"ambass", name:"Jeremiah Mpagazehe Graduate Student Service Award", subtitle:"CMU 2021", desc:"Award for service and contribution to the department of mechanical engineering during peak pandemic period as one othe first MechE MS student Abassadors."},
+    {id:"undergrad", name:"Scholarship for Higher Education in Foreign Countries for Meritorious Students", subtitle:"2019-2020", desc:"Awarded by the Higher and Technical Education Department by the Government of Maharashtra."}
+];
+    
 
 
 
-
-
-
-
+//-------- SAMPADA'S COMBINED INFORMATION HERE --------
 export const allProjects = [...sampadaProjects, ...sampadaUpcoming];
 export const allPublications = [...sampadaPublications, ...sampadaUpcomingPublications];
 

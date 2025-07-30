@@ -1,8 +1,11 @@
-import Layout from "./Layout";
+import Layout from "../Layout";
 import Project from "./Project";
-import { sampadaProjects, sampadaUpcoming, allProjects } from "../sampadaInfo";
+import MyHeader from "../MyHeader";
+import { sampadaProjects, sampadaUpcoming, allProjects } from "../../sampadaInfo";
 import { useState, useEffect} from "react";
+
 export default function Projects(){
+
     const [keywords, setKeywords] = useState("");
     const [showError, setShowError] = useState(false);
     const [isFiltering, setIsFiltering] = useState(false);
@@ -54,26 +57,18 @@ export default function Projects(){
     //shows all projects, divided into completed and in progress, with headers!
     let defaultPageInfo = (
         <div className="page-container">
+
             <div className="current-projects">
-                <div className="header-wrapper">
-                    <h3 className="header-text">Completed Projects</h3>
-                    <div className="underline">
-                        <span className="circle"></span>
-                    </div>
-                </div>
+                <MyHeader title="Completed Projects" id="projects-header" />
                 <div className="current-content">
                     {sampadaProjects.map((project)=>(
                         <Project photo={project.photo} title={project.id} description={project.info} link={project.link} subtitle={project.subtitle} tags={project.tags}/>
                     ))}
                 </div>
             </div>
+
             <div className="current-projects">
-                <div className="header-wrapper">
-                    <h3 className="header-text">Upcoming Projects</h3>
-                    <div className="underline">
-                        <span className="circle"></span>
-                    </div>
-                </div>
+                <MyHeader title="Upcoming Projects" id="upcoming-header" />
                 <div className="current-content">
                     {sampadaUpcoming.map((project)=>(
                         <Project photo={project.photo} title={project.id} description={project.info} link={project.link} subtitle={project.subtitle} tags={project.tags}/>

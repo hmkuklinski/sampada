@@ -1,5 +1,5 @@
 import Socials from './Socials';
-import { sampadaName, sampadaPhotoPaths } from '../sampadaInfo';
+import { sampadaName, sampadaPhotoPaths } from '../../sampadaInfo';
 export default function AboutLanding(){
     return (
         <div className="about-container">

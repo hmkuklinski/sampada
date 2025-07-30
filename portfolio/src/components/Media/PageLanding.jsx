@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
-import { sampadaTripleAwards } from '../sampadaInfo';
+import { sampadaTripleAwards } from '../../sampadaInfo';
 import MiniAward from './MiniAward';
 
 export default function PageLanding({isSingle}) {
