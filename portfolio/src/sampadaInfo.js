@@ -74,8 +74,30 @@ export const meritAwards = [
     {id:"ambass", name:"Jeremiah Mpagazehe Graduate Student Service Award", subtitle:"CMU 2021", desc:"Award for service and contribution to the department of mechanical engineering during peak pandemic period as one othe first MechE MS student Abassadors."},
     {id:"undergrad", name:"Scholarship for Higher Education in Foreign Countries for Meritorious Students", subtitle:"2019-2020", desc:"Awarded by the Higher and Technical Education Department by the Government of Maharashtra."}
 ];
-    
 
+//{id:"", title:"", date:"", prev:"", imgsrc:"", article:""},
+export const leadershipArticles = [
+    {id:"cla", title:"SWE Collegiate Leadership Institute Program", date:"2024-2025", prev:"Developed management and communication skills necessary for leadership roles.", imgsrc:"/assets/leadership/swe-cmu.jpg", article:""},
+    {id:"gsliasion", title:"Women in MechE Graduate Student Liason", date:"Fall 2024-Spring 2025", prev:"Facilitated academic, career, and social opportunities for the women in the mechanical engineering department.", imgsrc:"https://www.embs.org/wp-content/uploads/2023/07/ieee-embs-wibme-pr-featured-image-768x432.png", article:"https://www.instagram.com/cmu_womeninbme/"},
+    {id:"megsoliason", title:"MEGSO's Department Liaison", date:"Fall 2023- Spring 2024", prev:"(MechE Graduate Student Organization) Worked with the academic committee to create tax, housing, financial, TA and career resources for graduate students within the department", imgsrc:"/assets/leadership/cmu-me.jpg", article:"https://meche.engineering.cmu.edu/education/graduate-programs/graduate-activities.html"},
+    {id:"international", title:"CMU International Student Advocate", date:"Fall 2021- Spring 2023", prev:"Compiled and shared a tax resource for international students in collaboration with the Office of International Education at CMU.", imgsrc:"https://www.cmu.edu/admission/sites/default/files/styles/photo_grid_full_fallback/public/2021-09/international-students-900x600.jpg.webp?itok=iaDxGp6z", article:""},
+    {id:"meche-ms", title:"MechE MS Student Ambassador", date:"November 2019- May 2021", prev:"Served as the liaison between the mechanical engineering department and master's student community at CMU.", imgsrc:"/assets/leadership/cmu-me.jpg", article:""},
+    {id:"mentor", title:"Research Mentor", date:"", prev:"Mentored four undergraduate students for their honors research program resulting in a presentation in the \"Meeting of the Minds\" symposium at CMU.", imgsrc:"/assets/leadership/mind-symp.png", article:""},
+];
+
+export const teachings = [
+    {id:"", title:"", date:"", prev:"", imgsrc:"", article:""},
+    
+];
+
+export const conferences= [
+    {id:"gh2024", title:"Grace Hopper Celebration 2024", date:"October 2024", prev:"Represented the Women in MechE organization for its partication in the Grace Hopper celebration and assisted with managing interaction regarding graduate school experience with attendees.", imgsrc:"/assets/leadership/grace-hopper-sampada.jpg", article:""},
+    {id:"mit", title:"MIT A+B Applied Energy Symposium", date:"August 12-15, 2024", prev:"Bashu Aman presents \"Using Microwave Irradiations to Reduce CO2 Emissions from Alumina Ceramic Sintering Process\", with Advisor Professor B. Reeja-Jayan", imgsrc:"/assets/leadership/mit.png", article:"https://www.youtube.com/watch?v=XR5_qXpkGAs"},
+    {id:"aps", title:"American Physical Society March Meeting", date:"March 2024", prev:"Presented \"Gecko-Inspired Adhesive Structures for Amphibious Soft Robot Locomotion\" by Acharya, Sampada et al. (2024)", imgsrc:"/assets/leadership/aps.png", article:"https://meetings.aps.org/Meeting/MAR24/Session/N13.2"},
+    {id:"cmuforum", title:"Carnegie Mellon Forum on Biomedical Engineering", date:"2023", prev:"Presented \"Gecko adhesion based Sea Star Crawler Robot\" by Acharya, Sampada et al. (2022)", imgsrc:"/assets/graphics/publications/sampada-publication1.jpg", article:""},
+    {id:"gh2023", title:"Grace Hopper Celebration 2023", date:"September 2023", prev:"Represented the Mechanical Engineering department for its partication in the Grace Hopper celebration and managed interaction regarding graduate school experience with attendees.", imgsrc:"/assets/leadership/grace-hopper-conv.jpg", article:""},
+    {id:"research-sym", title:"CMU Department of MechE Master's Research Symposium", date:"2021", prev:"Presented \"Synthesis of Self-Healing Composites of Silicone and Liquid Metal\" by Acharya, Sampada et al. (2021)", imgsrc:"/assets/leadership/symp.jpg", article:""},
+];
 
 
 //-------- SAMPADA'S COMBINED INFORMATION HERE --------
