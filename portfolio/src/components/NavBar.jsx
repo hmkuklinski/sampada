@@ -27,7 +27,9 @@ export default function NavBar(){
             <li onClick={() => setShowHamburger(false)}><NavLink to="/projects" >Projects</NavLink></li>
             <li onClick={() => setShowHamburger(false)}><NavLink to="/publications" >Publications</NavLink></li>
             <li onClick={() => setShowHamburger(false)}><NavLink to="/thesis" >Thesis</NavLink></li>
-            <li onClick={() => setShowHamburger(false)}><NavLink to="/cv" >CV</NavLink></li>
+            <li onClick={() => setShowHamburger(false)}>
+                <a href="/documents/Sampada Acharya CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            </li>
             <li onClick={() => setShowHamburger(false)}><NavLink to="/awards" >Awards</NavLink></li>
             <li onClick={() => setShowHamburger(false)}><NavLink to="/community" >Community</NavLink></li>
         </ul>
