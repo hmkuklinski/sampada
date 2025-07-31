@@ -58,6 +58,9 @@ export const sampadaTripleAwards = [
 //-------- SAMPADA'S HIGHLIGHT AWARD INFORMATION HERE --------
 export const highlightAward = {
     id:"3minute", imgsrc:"/assets/3min/award.png", title:"3 Minute Thesis", subtitle:"Thursday, March 14, 2024", desc:"Nine doctoral students explained their complex research and its importance in under three minutes during the championship round of Carnegie Mellon University’s Three Minute Thesis (3MT) competition. Sampada is the first person in the history of CMU to win awards in all categories.",
+    linkedin:"https://www.linkedin.com/feed/update/urn:li:activity:7174395421450993664/",
+    presentation:"https://www.youtube.com/watch?v=12ZjNYNX4YE",
+    ceremony:"https://www.youtube.com/watch?v=y7P6M9sS5fM",
     awards: [
         {id:"award1", title:"2nd Place", subtitle:"3  Minute Thesis 2024 Championship", description:"Second Best Presentation"},
         {id:"award2", title:"People's Choice", subtitle:"3  Minute Thesis 2024 Championship", description:"Most votes received from audience members"},
@@ -65,7 +68,7 @@ export const highlightAward = {
     ]
 }
 
-
+//-------- SAMPADA'S AWARDS INFORMATION HERE --------
 export const meritAwards = [
     {id:"doctoral", name:"Scholarly Project Funding", subtitle:"Spring 2025", desc:"Awarded from Carnegie Mellon University for doctoral research work."},
     {id:"pita-grant", name:"Pennsylvania Infrastructure Technology Alliance Grant", subtitle:"April 18th, 2024", desc:"Led and wrote a successful proposal, titled \"Additive Manufacturing of Calcium Aluminate for Custom-Designed, Implantable, Load Bearing, Resorbable Bone Scaffolds.\""},
@@ -85,17 +88,18 @@ export const leadershipArticles = [
     {id:"mentor", title:"Research Mentor", date:"", prev:"Mentored four undergraduate students for their honors research program resulting in a presentation in the \"Meeting of the Minds\" symposium at CMU.", imgsrc:"/assets/leadership/mind-symp.png", article:""},
 ];
 
-export const teachings = [
-    {id:"", title:"", date:"", prev:"", imgsrc:"", article:""},
-    
+export const mediaMentions = [
+    {id:"robot", title:"So tricky, a robot can do it", date:"Kaitlyn Landram ", prev:"Carnegie Mellon Researchers have taken inspiration from geckos to create a material that adheres to wet and dry surfaces, even on an incline.", imgsrc:"/assets/leadership/article1.png", article:"https://engineering.cmu.edu/news-events/news/2023/08/16-gass-crawler.html"},
+    {id:"ortho", title:"Resetting the standard in orthopedics", date:"Kaitlyn Landram", prev:"Exoform, a customizable, semi-rigid material with self-fusing edges has the potential to eliminate many of the doctors visits that go along with broken bones, not to mention help them heal faster.", imgsrc:"/assets/leadership/article2.png", article:"https://engineering.cmu.edu/news-events/news/2021/09/22-exoform.html"},
+    {id:"3min", title:"Doctoral researchers shine in 3MT championship", date:"Sarah Bender", prev:"College of Engineering students explained complex research and its importance in under three minutes in the annual Three Minute Thesis competition.", imgsrc:"/assets/leadership/article3.png", article:"https://engineering.cmu.edu/news-events/news/2024/04/08-3mt.html"},
 ];
 
 export const conferences= [
-    {id:"gh2024", title:"Grace Hopper Celebration 2024", date:"October 2024", prev:"Represented the Women in MechE organization for its partication in the Grace Hopper celebration and assisted with managing interaction regarding graduate school experience with attendees.", imgsrc:"/assets/leadership/grace-hopper-sampada.jpg", article:""},
+    {id:"gh2024", title:"Grace Hopper Celebration 2024", date:"October 2024", prev:"Represented the Women in MechE organization for its partication in the Grace Hopper celebration and assisted with managing interaction regarding graduate school experience with attendees.", imgsrc:"/assets/leadership/grace-hopper-sampada.jpg", article:"https://www.linkedin.com/feed/update/urn:li:activity:7115361216755032064/"},
     {id:"mit", title:"MIT A+B Applied Energy Symposium", date:"August 12-15, 2024", prev:"Bashu Aman presents \"Using Microwave Irradiations to Reduce CO2 Emissions from Alumina Ceramic Sintering Process\", with Advisor Professor B. Reeja-Jayan", imgsrc:"/assets/leadership/mit.png", article:"https://www.youtube.com/watch?v=XR5_qXpkGAs"},
     {id:"aps", title:"American Physical Society March Meeting", date:"March 2024", prev:"Presented \"Gecko-Inspired Adhesive Structures for Amphibious Soft Robot Locomotion\" by Acharya, Sampada et al. (2024)", imgsrc:"/assets/leadership/aps.png", article:"https://meetings.aps.org/Meeting/MAR24/Session/N13.2"},
-    {id:"cmuforum", title:"Carnegie Mellon Forum on Biomedical Engineering", date:"2023", prev:"Presented \"Gecko adhesion based Sea Star Crawler Robot\" by Acharya, Sampada et al. (2022)", imgsrc:"/assets/graphics/publications/sampada-publication1.jpg", article:""},
-    {id:"gh2023", title:"Grace Hopper Celebration 2023", date:"September 2023", prev:"Represented the Mechanical Engineering department for its partication in the Grace Hopper celebration and managed interaction regarding graduate school experience with attendees.", imgsrc:"/assets/leadership/grace-hopper-conv.jpg", article:""},
+    {id:"cmuforum", title:"Carnegie Mellon Forum on Biomedical Engineering", date:"2023", prev:"Presented \"Gecko adhesion based Sea Star Crawler Robot\" by Acharya, Sampada et al. (2022)", imgsrc:"/assets/leadership/forum.jpg", article:"https://www.linkedin.com/posts/sampada-acharya29_hi-all-i-will-be-presenting-my-work-gecko-activity-7106825754251771904-7ujh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEVnSjEBRszvma9p2_dDwmqPofyH-W6QXFI"},
+    {id:"gh2023", title:"Grace Hopper Celebration 2023", date:"September 2023", prev:"Represented the Mechanical Engineering department for its partication in the Grace Hopper celebration and managed interaction regarding graduate school experience with attendees.", imgsrc:"/assets/leadership/grace-hopper-conv.jpg", article:"https://www.linkedin.com/posts/sampada-acharya29_last-week-students-faculty-and-staff-had-activity-7115686298937352192-RdVR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEVnSjEBRszvma9p2_dDwmqPofyH-W6QXFI"},
     {id:"research-sym", title:"CMU Department of MechE Master's Research Symposium", date:"2021", prev:"Presented \"Synthesis of Self-Healing Composites of Silicone and Liquid Metal\" by Acharya, Sampada et al. (2021)", imgsrc:"/assets/leadership/symp.jpg", article:""},
 ];
 
