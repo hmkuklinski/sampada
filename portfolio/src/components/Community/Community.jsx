@@ -1,5 +1,5 @@
 import Layout from "../Layout";
-// import PageLanding from "./PageLanding";
+import PageLanding from "./PageLanding";
 import BlogEntry from "./BlogEntry";
 import MyHeader from "../MyHeader";
 import { leadershipArticles, conferences } from "../../sampadaInfo";
@@ -30,9 +30,9 @@ export default function Community(){
     return (
         <Layout>
             <div className="page-container">
-                {/* <PageLanding /> */}
                 {leadershipHeading}
                 {leadershipBlog} 
+                <PageLanding />
                 {conferencesHeading}
                 {conferenceBlog}
             </div>
