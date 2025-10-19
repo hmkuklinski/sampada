@@ -7,6 +7,7 @@ import Projects from './components/Research/Projects';
 import Publications from './components/Research/Publications';
 import Thesis from './components/ThesisCV/Thesis';
 import {Route, Routes} from "react-router-dom";
+import Certs from './components/Awards/Certs';
 function App() {
     
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/thesis" element={<Thesis />} />
           <Route path="/awards" element={<Awards />} />
           <Route path="/community" element={<Community />} />
+          <Route path="/certifications" element={<Certs />} />
         </Routes>
       </div>
     </div>

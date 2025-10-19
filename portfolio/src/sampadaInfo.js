@@ -1,3 +1,18 @@
+export const sampadaNav= [
+    {id:"home", text:"Home", link:"/"},
+    {id:"projects", text:"Projects", link:"/projects"},
+    {id:"publications", text:"Publications", link:"/publications"},
+    {id:"thesis", text:"Thesis", link:"/thesis"},
+    
+];
+export const sampadaMobile = [
+    {id:"awards", text:"Awards", link:"/awards"},
+    {id:"certifications", text:"Certifications", link:"/certifications"},
+    {id:"community", text:"Community", link:"/community"},
+];
+export const sampadaNavMobile = [...sampadaNav, ...sampadaMobile];
+
+
 export const sampadaLinks = [
     {id:"gmail", info: "mailto:ssachary@andrew.cmu.edu", path:"/assets/icons/gmail.png"},
     {id: "linkedin", info:"https://www.linkedin.com/in/sampada-acharya29", path:"/assets/icons/linkedin.png"},
@@ -78,6 +93,14 @@ export const meritAwards = [
     {id:"undergrad", name:"Scholarship for Higher Education in Foreign Countries for Meritorious Students", subtitle:"2019-2020", desc:"Awarded by the Higher and Technical Education Department by the Government of Maharashtra."}
 ];
 
+//-------- SAMPADA'S CERTIFICATIONS ---------
+//{id:"", name:"", imgsrc:"", desc:""}
+export const sampadaCerts =[
+    {id:"", name:"", imgsrc:"", desc:""},
+    {id:"", name:"", imgsrc:"", desc:""},
+];
+
+//-------- SAMPADA LEADERSHIP ARTICLES -------
 //{id:"", title:"", date:"", prev:"", imgsrc:"", article:""},
 export const leadershipArticles = [
     {id:"cla", title:"SWE Collegiate Leadership Institute Program", date:"2024-2025", prev:"Developed management and communication skills necessary for leadership roles.", imgsrc:"/assets/leadership/swe-cmu.jpg", article:""},
