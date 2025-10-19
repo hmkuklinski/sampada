@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
 import {useState, useEffect} from "react";
+import { sampadaMobile, sampadaNav } from "../sampadaInfo";
 export default function NavBar(){
     const [isMobile, setIsMobile] = useState(false);
     const [showHamburger, setShowHamburger]= useState(false);
+    const [showDropdown, setShowDropdown]= useState(false);
     
     //check if the user is on mobile:
     useEffect(() => {
@@ -19,19 +21,45 @@ export default function NavBar(){
         setShowHamburger(prev =>!prev);
     }
 
+    const toggleShowDropdown=()=>{
+        setShowDropdown(prev => !prev);
+    }
+
+    const cvLi = ( 
+        <li onClick={() => setShowHamburger(false)}>
+            <a href="/documents/Sampada Acharya CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        </li>
+    );
+
+    const achievementsLi = (
+        <li className="dropdown" onClick={() => toggleShowDropdown()}>
+            <NavLink to="">Achievements</NavLink>
+            <ul className="dropdown-menu" style={{display:showDropdown? "flex":"none"}}>
+                <li><NavLink to="/awards">Awards</NavLink></li>
+                <li><NavLink to="/certifications">Certifications</NavLink></li>
+            </ul>
+        </li>
+    );
     //holds the ul for the navbar (with li elements)
     //note: added onclick to close the hamburger options if a link is clicked (so user can see whole page)
     const navbarUL = (
         <ul>
-            <li onClick={() => setShowHamburger(false)}><NavLink to="/">Home</NavLink></li>
-            <li onClick={() => setShowHamburger(false)}><NavLink to="/projects" >Projects</NavLink></li>
-            <li onClick={() => setShowHamburger(false)}><NavLink to="/publications" >Publications</NavLink></li>
-            <li onClick={() => setShowHamburger(false)}><NavLink to="/thesis" >Thesis</NavLink></li>
-            <li onClick={() => setShowHamburger(false)}>
-                <a href="/documents/Sampada Acharya CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-            </li>
-            <li onClick={() => setShowHamburger(false)}><NavLink to="/awards" >Awards</NavLink></li>
+            {sampadaNav.slice(0,3).map((nav)=>(
+                <li onClick={() => setShowHamburger(false)}><NavLink to={nav.link}>{nav.text}</NavLink></li>
+            ))}
+            {cvLi}
+            {achievementsLi}
             <li onClick={() => setShowHamburger(false)}><NavLink to="/community" >Community</NavLink></li>
+        </ul>
+    );
+    const navbarMobileUL = (
+        <ul>
+            {sampadaNav.slice(0,3).map((nav)=>(
+                <li onClick={() => setShowHamburger(false)}><NavLink to={nav.link}>{nav.text}</NavLink></li>
+            ))}
+            {sampadaMobile.map((nav)=>(
+                 <li onClick={() => setShowHamburger(false)}><NavLink to={nav.link}>{nav.text}</NavLink></li>
+            ))}
         </ul>
     );
 
@@ -56,7 +84,7 @@ export default function NavBar(){
             {navbarName}
             {mobileBtn}
             <div className="nav-links" style={{display: showHamburger? "block": "none"}}>
-            {navbarUL}
+            {navbarMobileUL}
             </div>
         </nav>
         )
