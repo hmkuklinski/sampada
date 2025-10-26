@@ -151,12 +151,12 @@
   height: 700px;
 }
 .about-left{
-  width:30%;
+  width:40%;
   margin-top: 25px;
 }
 .about-information{
   height: 550px;
-  width: 60%;
+  width: 50%;
   text-align:justify;
 }
 .about-photo img{
@@ -321,6 +321,7 @@
   gap: 4px;
   text-decoration: none;
   cursor:pointer;
+  color:blue;
 }
 
 .project-link, .cert-link{
@@ -982,12 +983,14 @@
   }
   .mini-title h3, .mini-desc p{
     margin:0;
+    text-align: center;
   }
   .mini-title h3{
     font-size: 20px;
   }
   .mini-desc p , .highlight-desc p{
     font-size: 17px;
+    text-align: justify;
   }
   #merit-awards{
     margin: 0px 0px 35px 0px;
@@ -996,7 +999,7 @@
     width: 95%;
     padding: 3px;
   }
-  #simple-awards .project-text{
+  #simple-awards .project-text, #simple-awards .project-subtitle h4{
     text-align:center;
   }
   .page-landing{
@@ -1035,13 +1038,19 @@
   .project-link a{
     font-size: 15px;
   }
-  .project-link-div{
+  /* .project-link-div{
     margin: 15px;
-  }
+  } */
   .cert-container, .cert-link{
     display:flex;
     align-items: center;
     justify-content: center;
+  }
+  .cert-link .project-link-div{
+    margin:0;
+  }
+  .cert-link{
+    margin:20px 0px;
   }
 
 }
@@ -1056,6 +1065,7 @@
     font-size: 14px;
   }
   .highlight-section{
+    align-items: center;
     flex-direction: column;
   }
   .highlight-img{
