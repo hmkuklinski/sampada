@@ -589,9 +589,9 @@
   margin-top: 15px;
 }
 
-#simple-awards .project-text{
+#simple-awards .project-text p{
   padding: 6px;
-
+  margin:0;
 }
 
 /* ------------------blog editing----------------------------*/
@@ -990,6 +990,8 @@
   }
   .mini-desc p , .highlight-desc p{
     font-size: 17px;
+  }
+  .highlight-desc p{
     text-align: justify;
   }
   #merit-awards{
@@ -1052,6 +1054,12 @@
   .cert-link{
     margin:20px 0px;
   }
+  #simple-awards{
+    height: 260px;
+  }
+  .award-container{
+    margin:5px;
+  }
 
 }
 @media (max-width: 450px){
@@ -1069,7 +1077,7 @@
     flex-direction: column;
   }
   .highlight-img{
-    height: 550px;
+    height: 400px;
   }
   .project-link{
     flex-direction: column;
