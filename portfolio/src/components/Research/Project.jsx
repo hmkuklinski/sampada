@@ -50,7 +50,11 @@ export default function Project({photo, link, title, subtitle, description, vidL
                             {articleLink && <a href={articleLink} target="_blank" rel="noopener noreferrer">Read Article<ion-icon name="chevron-forward-outline"></ion-icon></a>}
                         </div>
                         <div className="project-link-div">
-                            {vidLink && <a href={vidLink} target="_blank" rel="noopener noreferrer">Watch Video <ion-icon name="chevron-forward-outline"></ion-icon></a>}
+                            {vidLink && (
+                                <a href={vidLink} download rel="noopener noreferrer">
+                                Download Video <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </a>
+                            )}
                         </div>
                     </div>
                 </div>
