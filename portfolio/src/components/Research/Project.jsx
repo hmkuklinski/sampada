@@ -44,10 +44,10 @@ export default function Project({photo, link, title, subtitle, description, vidL
                     </div>
                     <div className="project-link">
                         <div className="project-link-div">
-                            <a href={link} target="_blank" rel="noopener noreferrer">View PDF<ion-icon name="chevron-forward-outline"></ion-icon></a>
+                            <a href={link} target="_blank" rel="noopener noreferrer">PDF<ion-icon name="chevron-forward-outline"></ion-icon></a>
                         </div>
                         <div className="project-link-div">
-                            {articleLink && <a href={articleLink} target="_blank" rel="noopener noreferrer">Read Article<ion-icon name="chevron-forward-outline"></ion-icon></a>}
+                            {articleLink && <a href={articleLink} target="_blank" rel="noopener noreferrer">Article<ion-icon name="chevron-forward-outline"></ion-icon></a>}
                         </div>
                         <div className="project-link-div">
                             {vidLink && (

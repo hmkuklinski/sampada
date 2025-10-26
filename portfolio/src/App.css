@@ -1079,8 +1079,12 @@
   .highlight-img{
     height: 400px;
   }
-  .project-link{
-    flex-direction: column;
+  .project-image{
+    width: 90%;
+    height: 30%;
+  }
+  .project-link a{
+    font-size: 13px;
   }
   #highlight-links{
     flex-direction: row;
@@ -1096,4 +1100,5 @@
   #simple-awards{
     margin: 14px 0px;
   }
+  
 }
