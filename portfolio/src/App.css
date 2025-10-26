@@ -169,8 +169,7 @@
   font-size: 36px;
 }
 #highlight-links{
-  justify-content: center;
-  margin: 15px;
+  justify-content: space-evenly;
 }
 
 .about-subheading h4, .project-subtitle h4 , .cert-subtitle h4{
@@ -474,6 +473,9 @@
   width: 90%;
 
 }
+#highlight-header {
+  width:100%;
+}
 
 /*holds the awards img, and main award info and subawards*/
 .highlighted-award{
@@ -498,19 +500,24 @@
 /* formatting for the highlighted award content- info about contest and subwards*/
 .highlight-content{
   display:flex;
-  align-items: space-between;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   margin: 3px;
-  padding: 0px 4px;
-  width:54%;
-  height: 550px;
+  padding:5px;
+  width:52%;
+  height:auto;
 }
 /*formatting for the highlighted award img*/
 .highlight-img{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 40%;
-  height: 500px;
+  height: auto;
   margin: 10px;
+  padding: 6px;
 }
 
 .highlight-img img{
@@ -539,6 +546,7 @@
 .highlight-content .header-wrapper .underline{
   width: 25%;
 }
+
 .mini-desc p{
   font-size: 12px;
   text-align: left;
@@ -994,9 +1002,9 @@
   .highlight-desc p{
     text-align: justify;
   }
-  #merit-awards{
+  /* #merit-awards{
     margin: 0px 0px 35px 0px;
-  }
+  } */
   #simple-awards{
     width: 95%;
     padding: 3px;
@@ -1059,6 +1067,15 @@
   }
   .award-container{
     margin:5px;
+  }
+  .highlight-title h2{
+    font-size: 32px;
+  }
+  #awards .header-text{
+    font-size: 30px;
+  }
+  #awards .header-wrapper .underline{
+    width: 40%;
   }
 
 }

@@ -11,7 +11,7 @@ export default function Awards(){
     //check if the user is on mobile:
     useEffect(() => {
         function handleResize() {
-        setIsMobile(window.innerWidth < 768);
+        setIsMobile(window.innerWidth <= 768);
         }
         handleResize(); // check on mount
         window.addEventListener("resize", handleResize);
@@ -19,15 +19,14 @@ export default function Awards(){
     }, []);
     
     //headers for the different awards sections! :D
-    const awardsMobile = <MyHeader title="Featured Awards" id="mobile-awards" />;
+    // const awardsMobile = <MyHeader title="Featured Awards" id="mobile-awards" />;
     const meritHeader= <MyHeader title="Merit Awards" id="merit-awards" />;
 
     return (
         <Layout>
             <div className="page-container" id="awards">
-                {isMobile&& awardsMobile}
+                {/* {isMobile&& awardsMobile} */}
                 <HighlightedAward isMobile={isMobile}/>
-                
                 {meritHeader}
                 <div className="award-container">
                     {meritAwards.map((award =>(
