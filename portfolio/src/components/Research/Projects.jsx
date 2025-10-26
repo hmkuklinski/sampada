@@ -3,6 +3,7 @@ import Project from "./Project";
 import MyHeader from "../MyHeader";
 import { sampadaProjects, sampadaUpcoming, allProjects } from "../../sampadaInfo";
 import { useState, useEffect} from "react";
+import InProgressProject from "./InProgressProject";
 
 export default function Projects(){
 
@@ -62,7 +63,7 @@ export default function Projects(){
                 <MyHeader title="Completed Projects" id="projects-header" />
                 <div className="current-content">
                     {sampadaProjects.map((project)=>(
-                        <Project photo={project.photo} title={project.id} description={project.info} link={project.link} subtitle={project.subtitle} tags={project.tags}/>
+                        <Project photo={project.photo} title={project.id} description={project.info} link={project.link} subtitle={project.subtitle} tags={project.tags} vidLink={project.vidLink} articleLink={project.articleLink}/>
                     ))}
                 </div>
             </div>
@@ -71,7 +72,7 @@ export default function Projects(){
                 <MyHeader title="Upcoming Projects" id="upcoming-header" />
                 <div className="current-content">
                     {sampadaUpcoming.map((project)=>(
-                        <Project photo={project.photo} title={project.id} description={project.info} link={project.link} subtitle={project.subtitle} tags={project.tags}/>
+                        <InProgressProject title={project.id} description={project.info} />
                     ))}
                 </div>
             </div>

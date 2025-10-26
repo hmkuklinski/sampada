@@ -3,7 +3,7 @@
 }
 :root{
   --navbar-link: whitesmoke;
-  --navbar-dropdown-container: rgb(60, 60, 60);
+  --navbar-dropdown-container: rgb(69,69,69);
 }
 /*----------------------------navbar formatting ---------------------------*/
 .navbar-container{
@@ -54,9 +54,13 @@
   gap: 1rem;
   width: 100%;
 }
-.navbar-links li{
+.navbar-links li {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
+
 .navbar-links a{
   color: var(--navbar-link);
   text-decoration: none;
@@ -76,10 +80,9 @@
   justify-content: center;
   flex-direction: column;
   background-color: var(--navbar-dropdown-container);
-  top: 25px;
-  right: 0px;
-  width: inherit;
-  height: 50px;
+  top: 32px;
+  left: 0px;
+  height: 45px;
 }
 .dropdown-menu li{
   display:flex;
@@ -101,7 +104,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   position:relative;
-  height: 650px;
+  height: 670px;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -111,9 +114,13 @@
   width: 95%;
   position:absolute;
   left: 2%;
-  top: 70%;
+  top: 65%;
   height:auto;
   border-radius: 20px;
+}
+.landing-header h1{
+  font-size: 16px;
+  margin:2px;
 }
 /*-------------------social link formatting ---------------*/
 .social-link img{
@@ -161,8 +168,12 @@
 .highlight-title h2{
   font-size: 36px;
 }
+#highlight-links{
+  justify-content: center;
+  margin: 15px;
+}
 
-.about-subheading h4, .project-subtitle h4{
+.about-subheading h4, .project-subtitle h4 , .cert-subtitle h4{
   font-weight: 400;
   margin: 0;
   font-style:italic;
@@ -233,23 +244,36 @@
 }
 
 /* ------------------- project card formatting-------------------*/
-.project-container{
+.project-container, .cert-container{
   display:flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   margin: 30px 0px;
-  width: 100%;
+  width: 96%;
   padding: 12px 5px;
   height: auto;
 }
-.project-content{
+.cert-container{
+  margin: 10px 0px;
+  padding: 8px;
+}
+.project-content, .cert-content{
   text-align: justify;
-  width: 70%;
+  width: 65%;
   padding: 8px;
   margin: 0px 25px;
   height:100%;
 }
+.cert-content{
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+#cert-sub{
+  margin-left: 12px;
+}
+
 /* special formatting for the in progress publications*/
 #publication-container .project-content{
   width: 90%;
@@ -264,15 +288,21 @@
   margin-top: 50px;
 }
 /* project title div*/
-.project-title, .highlight-title{
+.project-title{
   margin: 30px 0px 10px 0px;
+}
+.cert-title{
+  margin: 10px;
+}
+.cert-title h2, #cert-sub h4{
+  margin:0;
 }
 .project-image{
   display:flex;
   align-items:center;
   justify-content:center;
-  width: 20%;
-  height: 200px;
+  width: 30%;
+  height: 250px;
   margin: 0px 15px;
 }
 .project-image img{
@@ -285,7 +315,7 @@
   margin: 50px 0px 30px 0px;
 }
 
-.project-link a, .show-search {
+.project-link a, .show-search, .cert-link a {
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -293,6 +323,26 @@
   cursor:pointer;
 }
 
+.project-link, .cert-link{
+  display:flex;
+  align-items:center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin: 20px;
+}
+
+.project-link-div{
+  margin-right: 40px;
+}
+
+.project-link a{
+  color: blue;
+}
+.project-link a:hover{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 
 /* ------------------- search option formatting-------------------*/
 .search-option{
@@ -415,6 +465,15 @@
   padding: 10px;
   width: 90%;
 }
+
+.certifications-container .header-wrapper{
+  left: 0px;
+  margin:15px;
+  padding: 10px;
+  width: 90%;
+
+}
+
 /*holds the awards img, and main award info and subawards*/
 .highlighted-award{
   flex-direction: row;
@@ -427,8 +486,13 @@
   margin: 0;
   font-style: italic;
 }
+.highlight-desc{
+  text-align: left;
+  padding: 3px;
+
+}
 .highlight-desc p{
-  margin: 10px 0px;
+  margin: 15px;
 }
 /* formatting for the highlighted award content- info about contest and subwards*/
 .highlight-content{
@@ -438,13 +502,13 @@
   flex-direction: column;
   margin: 3px;
   padding: 0px 4px;
-  width:50%;
+  width:54%;
   height: 550px;
 }
 /*formatting for the highlighted award img*/
 .highlight-img{
-  height: 530px;
   width: 40%;
+  height: 500px;
   margin: 10px;
 }
 
@@ -456,7 +520,6 @@
 
 /* ------------------- highlight award- sub awards formatting-------------------*/
 .highlight-section{
-  margin-top: 20px;
   display:flex;
   align-items:flex-start;
   justify-content:center;
@@ -464,22 +527,24 @@
 }
 .highlight-mini{
   width: 30%;
+  padding: 3px;
   margin: 10px;
 }
 .highlight-content .header-wrapper{
   left: 0px;
-  margin:20px;
-  padding: 10px;
+  margin:10px;
+  padding: 3px;
 }
 .highlight-content .header-wrapper .underline{
-  left: 3%;
-  width: 30%;
+  width: 25%;
 }
 .mini-desc p{
-  font-size: 14px;
+  font-size: 12px;
+  text-align: left;
 }
 .mini-title h3{
-  font-size: 19px;
+  text-align: left;
+  font-size: 16px;
 }
 
 
@@ -530,7 +595,7 @@
 
 /* ------------------blog editing----------------------------*/
 .blog-container{
-  width: 90%;
+  width: 100%;
 }
 .community-div{
   display:flex;
@@ -587,7 +652,7 @@
   margin-bottom: 50px;
   height: auto;
   min-height: 420px;
-  max-height: 500px;
+  max-height: 520px;
 }
 .blog-box:hover{
   cursor:pointer;
@@ -675,6 +740,11 @@
   margin-left: 7px;
 }
 
+
+.landing-text{
+  font-size: 11px;
+  padding: 4px;
+}
 /* ------------------- media embed formatting-------------------*/
 .media-container{
   display:flex;
@@ -699,6 +769,8 @@
 
 
 /* ------------------- mobile formatting-------------------*/
+
+
 @media (max-width: 768px){
   /* holds the name and hamburger menu option*/
   .navbar-container{
@@ -814,24 +886,33 @@
     height: 100%;
   }
   /*individual projects/publications container formatting*/
-  .project-container{
+  .project-container , .cert-container{
     flex-direction: column;
     margin: 15px 0px;
+  }
+  .cert-container{
+    margin: 5px;
   }
   /*extra spacing for the title/subtitle of the publications and projects */
   .project-title{
     margin: 5px 0px;
   } 
+  .cert-title{
+    margin: 5px 0px;
+  }
   .project-subtitle{
     margin: 10px 0px;
   }
   /* text aligning for the title and subtitle*/
-  .project-title h2, .project-subtitle h4{
+  .project-title h2, .project-subtitle h4, .cert-title h2, .cert-subtitle h4{
     text-align:center;
   }
   /*contains all content for publications and projects- title, authors/subtitle, description, redirect link*/
   .project-content{
     width: 90%;
+  }
+  .cert-content{
+    width: 95%;
   }
   /*contains project or publication description and link*/
   .project-info{
@@ -896,7 +977,7 @@
     object-fit: none;
   }
   .highlight-mini{
-    width: 100%;
+    width: 95%;
     margin: 15px 0px;
   }
   .mini-title h3, .mini-desc p{
@@ -925,13 +1006,10 @@
     font-size: 22px;
   }
   .landing-text, .landing-keywords{
-    font-size: 14px;
+    font-size: 12px;
     padding: 5px;
   }
   .blog-box{
-    position:relative;
-    left: 10%;
-    width: 75%;
     margin: 10px;
     height: auto;
     min-height: 0;     
@@ -954,13 +1032,48 @@
     overflow: hidden;
     
   }
+  .project-link a{
+    font-size: 15px;
+  }
+  .project-link-div{
+    margin: 15px;
+  }
+  .cert-container, .cert-link{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 }
 @media (max-width: 450px){
+  /* special text formatting for the in progress title/subtitle- justify*/
+  #publication-container .project-title h2{
+    text-align:left;
+    font-size: 20px;
+  }
+  .project-subtitle h4, .cert-subtitle h4{
+    text-align:left;
+    font-size: 14px;
+  }
   .highlight-section{
     flex-direction: column;
   }
   .highlight-img{
     height: 550px;
+  }
+  .project-link{
+    flex-direction: column;
+  }
+  #highlight-links{
+    flex-direction: row;
+    margin: 0px;
+  }
+  .highlight-mini{
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+  }
+  #cert-sub{
+    margin-left: 12%;
   }
 }

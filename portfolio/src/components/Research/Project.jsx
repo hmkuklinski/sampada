@@ -1,5 +1,5 @@
 import { sampadaName } from "../../sampadaInfo";
-export default function Project({photo, link, title, subtitle, description}){
+export default function Project({photo, link, title, subtitle, description, vidLink = null, articleLink =null}){
     const fullName = sampadaName;
     const nameParts = fullName.split(" "); // ["Sampada", "Acharya"]
     const firstLast = fullName;
@@ -41,10 +41,17 @@ export default function Project({photo, link, title, subtitle, description}){
                 <div className="project-info">
                     <div className="project-text">
                         {description}
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illum tempora sit quas omnis voluptates nemo expedita perspiciatis voluptatum maiores obcaecati eius magnam aut, molestiae ullam. Nihil laudantium debitis sed.</p>
                     </div>
                     <div className="project-link">
-                        <a href={link} target="_blank" rel="noopener noreferrer">Read More <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                        <div className="project-link-div">
+                            <a href={link} target="_blank" rel="noopener noreferrer">View PDF<ion-icon name="chevron-forward-outline"></ion-icon></a>
+                        </div>
+                        <div className="project-link-div">
+                            {articleLink && <a href={articleLink} target="_blank" rel="noopener noreferrer">Read Article<ion-icon name="chevron-forward-outline"></ion-icon></a>}
+                        </div>
+                        <div className="project-link-div">
+                            {vidLink && <a href={vidLink} target="_blank" rel="noopener noreferrer">Watch Video <ion-icon name="chevron-forward-outline"></ion-icon></a>}
+                        </div>
                     </div>
                 </div>
             </div>

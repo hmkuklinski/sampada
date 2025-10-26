@@ -44,7 +44,7 @@ export default function NavBar(){
     //note: added onclick to close the hamburger options if a link is clicked (so user can see whole page)
     const navbarUL = (
         <ul>
-            {sampadaNav.slice(0,3).map((nav)=>(
+            {sampadaNav.slice(0,2).map((nav)=>(
                 <li onClick={() => setShowHamburger(false)}><NavLink to={nav.link}>{nav.text}</NavLink></li>
             ))}
             {cvLi}
@@ -54,7 +54,7 @@ export default function NavBar(){
     );
     const navbarMobileUL = (
         <ul>
-            {sampadaNav.slice(0,3).map((nav)=>(
+            {sampadaNav.slice(0,2).map((nav)=>(
                 <li onClick={() => setShowHamburger(false)}><NavLink to={nav.link}>{nav.text}</NavLink></li>
             ))}
             {sampadaMobile.map((nav)=>(

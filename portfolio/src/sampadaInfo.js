@@ -1,6 +1,7 @@
 export const sampadaNav= [
     {id:"home", text:"Home", link:"/"},
-    {id:"projects", text:"Projects", link:"/projects"},
+    //remember to change the navbar slice from (0,2) to (0,3) when adding this section!
+    // {id:"projects", text:"Projects", link:"/projects"}, 
     {id:"publications", text:"Publications", link:"/publications"},
     {id:"thesis", text:"Thesis", link:"/thesis"},
     
@@ -26,33 +27,59 @@ export const sampadaPhotoPaths = [
     {id: "timeline", info:"/assets/graphics/timeline.png"}
 ];
 
-//-------- SAMPADA'S RESEARCH HERE --------
-//template for entries here: {id:"", subtitle:"", photo:"", info:"", link:"", tags:""}
+//-------- SAMPADA'S RESEARCH  PROJECTS HERE --------
+//template for entries here: {id:"", subtitle:"", photo:"", info:"", link:"", articleLink:"", vidLink:"", tags:""}
 export const sampadaProjects = [
-    {id: "project1", subtitle:"subtitle", photo:"https://archive.org/download/placeholder-image//placeholder-image.jpg", info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero consectetur quisquam, impedit optio ipsam inventore, et numquam officiis unde debitis vero molestiae omnis veritatis magnam repellendus totam veniam assumenda.", link:"", tags:"tag1"},
-    {id: "project2", subtitle:"subtitle",photo:"https://archive.org/download/placeholder-image//placeholder-image.jpg", info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero consectetur quisquam, impedit optio ipsam inventore, et numquam officiis unde debitis vero molestiae omnis veritatis magnam repellendus totam veniam assumenda.", link:"",tags:"tag2"},
-   
+    {
+        id: "Gecko Adhesion Based Sea Star Crawler Robot", subtitle:"Acharya, Sampada*, Peter Roberts*, Tejas Rane, Raghav Singhal, Peize Hong, Viraj Ranade, Carmel Majidi,  Victoria Webster-Wood, and B. Reeja-Jayan.", photo:"../assets/graphics/publications/sampada-publication1.jpg", 
+        info:"During my first project, I aimed to demonstrate the feasibility of a robotic system capable of amphibious adhesion and locomotion to navigate a wide range of environments. Thus, I worked on designing, fabricating and testing a cost-effective, nature-inspired soft robot with amphibious adhesion and locomotion capabilities to navigate multiple environments. By combining soft, structure-based, gecko-inspired adhesives with soft sea-star-shaped pneumatically actuated limbs I was able to create a soft crawler robot that could function in both wet and dry environments. I fabricated the gecko-inspired adhesive material using a cost-effective casting technique and characterized its adhesion in both dry and wet environments. I then collaborated with 3 different labs to lead a multidisciplinary team to integrate the adhesive material with a soft, 5-limbed sea-star inspired robot, designed and fabricated in-house and tested the robot’s amphibious locomotion performance. This soft robot is the first of its kind to use soft, gecko-inspired adhesive structure for locomotion on inclines up to 25° and adhesion on inclines up to 50° on both dry and wet surfaces. A paper based on this work was published in the Frontiers in Robotics and AI journal and I also presented this work at the APS 2024 March Meeting.", 
+        link:"https://drive.google.com/file/d/1hYDgQhlolySEOT-Tl1oktWphae0Jf5SW/view?usp=drive_web", 
+        articleLink:"https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2023.1209202/full", 
+        vidLink:"/videos/Gecko Video.MP4",
+        tags:"tag1"
+    },
+    {
+        id: "Making the Case for Scaling up Microwave Sintering of  Ceramics.", 
+        subtitle:"Aman, Bashu, Sampada Acharya, and B. Reeja-Jayan. \"Making the Case for Scaling up Microwave Sintering of  Ceramics.\" Advanced Engineering Materials 2302065 (2024)", 
+        photo:"/assets/graphics/publications/sampada-publication3.jpg", 
+        info:"Microwave sintering of ceramics, first explored in the1960s, is gaining renewed attention due to its lower energy consumption and reduced carbon footprint compared to conventional heating methods. Despite its advantages—such as contactless operation and geometric flexibility—scaling the process for industrial use remains challenging, primarily due to complex multiscale and multiphysics interactions during microwave coupling. However, recent advances in computational modeling, real-time control systems, materials characterization, and software tools present new opportunities to overcome these limitations. These innovations can enable precise understanding and management of processing heterogeneities, making scale-up more feasible. Additionally, the rapid rise of additive manufacturing intensifies the need for adaptable, energy-efficient sintering technologies that support near-net-shape fabrication. Microwave sintering, when refined and scaled, holds significant potential to revolutionize ceramic manufacturing for high-performance applications in medical, automotive, and aerospace sectors—supporting sustainability and design complexity in next-generation engineered materials.", 
+        link:"/documents/Ceramics PDF.pdf",
+        articleLink:"https://advanced.onlinelibrary.wiley.com/doi/10.1002/adem.202302065",
+        vidLink:"",
+        tags:"ceramics"
+    },
+    {
+        id: "ExoForm: Shape Memory and Self-Fusing Semi-Rigid Wearables.", 
+        subtitle:"Qin, Fang, Huai-Yu Cheng, Rachel Sneeringer, Maria Vlachostergiou, Sampada Acharya, Haolin Liu, Carmel Majidi,  Mohammad Islam, and Lining Yao. \"ExoForm: Shape Memory and Self-Fusing Semi-Rigid Wearables.\" In Extended  Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems, pp. 1-8. 2021. ",
+        photo:"/assets/graphics/publications/sampada-publication2.png", 
+        info:"Traditional orthotics are typically non-adjustable and non-reusable, requiring skilled professionals for customization. To address these issues, I developed a composite material combining polyborosiloxane, a room-temperature self-healing polymer, and functional fillers like multi-walled carbon nanotubes and eutectic alloy of indium and gallium. The optimized composite was integrated with a 4D-printed polylactic acid structure to form a smart, conformable, self-healable, reusable and cost-effective medical brace that could be easily customized for each patient without requiring skilled medical professionals, making it cost-effective and accessible, even in remote settings.  This work was presented in the 2021 CHI Conference on Human Factors in Computing Systems.  ", 
+        link:"/documents/Exoform PDF.pdf",
+        articleLink:"https://dl.acm.org/doi/10.1145/3411763.3451818",
+        vidLink:"/videos/Exoform Video.mp4",
+        tags:"exoform"
+    }, 
+    
 ];
 
 //-------- SAMPADA'S UPCOMING RESEARCH HERE --------
 //template for entries here: {id:"", subtitle:"", photo:"", info:"", link:"", tags:""}
-export const sampadaUpcoming = [
-    {id: "project3", subtitle:"subtitle",photo:"https://archive.org/download/placeholder-image//placeholder-image.jpg", info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero consectetur quisquam, impedit optio ipsam inventore, et numquam officiis unde debitis vero molestiae omnis veritatis magnam repellendus totam veniam assumenda.", link:"", tags:"tag3"},
-    {id: "project4", subtitle:"subtitle",photo:"https://archive.org/download/placeholder-image//placeholder-image.jpg", info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero consectetur quisquam, impedit optio ipsam inventore, et numquam officiis unde debitis vero molestiae omnis veritatis magnam repellendus totam veniam assumenda.", link:"", tags:"tag4"},
-    {id: "project5", subtitle:"subtitle",photo:"https://archive.org/download/placeholder-image//placeholder-image.jpg", info:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero consectetur quisquam, impedit optio ipsam inventore, et numquam officiis unde debitis vero molestiae omnis veritatis magnam repellendus totam veniam assumenda.", link:"", tags:"tag5"},
+export const sampadaUpcoming = [ 
+    {
+        id: "Low Aspect-Ratio Soft Microstructures for Particulate Gripping in Soft Robotics", 
+        info:"In developing soft robotic systems capable of manipulation and locomotion across diverse terrains and substrates, the ability to grip, release, and maneuver particles—such as debris, pills, or granular matter—is essential. Traditional methods such as vacuum suction or rigid clamping often fail on fragile, rough, or dry particles. Nature affords alternative strategies: geckos harness dry adhesion via fibrillar setae; tree frogs exploit capillary-assisted wet adhesion; suction cups in cephalopods regulate attachment underwater. Yet, many of these rely on elaborate high-aspect-ratio architectures that pose fabrication and durability challenges.Low-aspect-ratio (AR ≤ 1) microstructures—such as hemispheres, wedges, or cupped suckers—offer a robust, scalable, and mechanically resilient alternative. Their compactness reduces mechanical failure risks and simplifies molding processes. Exploring how these geometries interact with particles can reveal whether adhesion, frictional interlocking, or rim confinement drive gripping. This work examines pull-off adhesion and particulate pickup across such structures to elucidate underlying mechanisms and guide design of soft robotic gripping interfaces.", 
+        tags:"microstructures"
+    },
 ];
 
 //-------- SAMPADA'S PUBLICATION INFORMATION HERE --------
 //template for entries here: {id:"", subtitle:"", photo:"", info:""}
 export const sampadaPublications = [
-    //Project1
-    {id:"Gecko adhesion based sea star crawler robot.", subtitle:"Acharya, Sampada*, Peter Roberts*, Tejas Rane, Raghav Singhal, Peize Hong, Viraj Ranade, Carmel Majidi,  Victoria Webster-Wood, and B. Reeja-Jayan. \"Gecko adhesion based sea star crawler robot.\" Frontiers in Robotics and  AI 10 (2023).", photo:"/assets/graphics/publications/sampada-publication1.jpg", info:"", link:""}, 
-    //Project2 
-    {id: "ExoForm: Shape Memory and Self-Fusing Semi-Rigid Wearables", subtitle:"Qin, Fang, Huai-Yu Cheng, Rachel Sneeringer, Maria Vlachostergiou, Sampada Acharya, Haolin Liu, Carmel Majidi,  Mohammad Islam, and Lining Yao. \"ExoForm: Shape Memory and Self-Fusing Semi-Rigid Wearables.\" In Extended  Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems, pp. 1-8. 2021. ",photo:"/assets/graphics/publications/sampada-publication2.png", info:"", link:"https://dl.acm.org/doi/pdf/10.1145/3411763.3451818"},
-    //Project3
-    {id: "Making the Case for Scaling up Microwave Sintering of  Ceramics.", subtitle:"Aman, Bashu, Sampada Acharya, and B. Reeja-Jayan. \"Making the Case for Scaling up Microwave Sintering of  Ceramics.\" Advanced Engineering Materials 2302065 (2024)", photo:"/assets/graphics/publications/sampada-publication3.jpg", info:"", link:""},
-   
-    
+    //Project1 --> Publication1: Gecko
+    sampadaProjects[0],
+    //Project2 --> Publication2 : ExoForm
+    sampadaProjects[1],
+    //Project3 --> Publication3: Ceramics
+    sampadaProjects[2]
 ];
 
 //-------- SAMPADA'S UPCOMING PUBLICATION INFORMATION HERE --------
@@ -94,10 +121,13 @@ export const meritAwards = [
 ];
 
 //-------- SAMPADA'S CERTIFICATIONS ---------
-//{id:"", name:"", imgsrc:"", desc:""}
+//{id:"", name:"", imgsrc:"", obtained:"", expired:""}
 export const sampadaCerts =[
-    {id:"", name:"", imgsrc:"", desc:""},
-    {id:"", name:"", imgsrc:"", desc:""},
+    {id:"cert1", name:"Working with Mice in Research Settings", certPdf:"/certifications/Working with Mice in Research Settings.pdf", obtained:"October 15, 2025", expired:"October 15, 2028", canExpire:true},
+    {id:"cert2", name:"Working with Rats in Research Settings", certPdf:"/certifications/Working with Rats in Research Settings.pdf", obtained:"October 15, 2025", expired:"October 15, 2028", canExpire:true},
+    {id:"cert3", name:"Biomedical Responsible Code of Conduct", certPdf:"/certifications/Biomedical Responsible Code of Conduct.pdf", obtained:"October 14, 2025", expired:"N/A", canExpire:false},
+    {id:"cert4", name:"Biomedical Research- Basic Refresher", certPdf:"/certifications/Biomedical Research - Basic_Refresher.pdf", obtained:"October 14, 2025", expired:"October 14, 2028", canExpire:true},
+    {id:"cert5", name:"Working with the IACUC- Investigators, Staff, Students", certPdf:"/certifications/Working with the IACUC - Investigators _ Staff _ Students.pdf", obtained:"October 14, 2025", expired:"October 14, 2028", canExpire:true},
 ];
 
 //-------- SAMPADA LEADERSHIP ARTICLES -------
@@ -132,3 +162,5 @@ export const allProjects = [...sampadaProjects, ...sampadaUpcoming];
 export const allPublications = [...sampadaPublications, ...sampadaUpcomingPublications];
 
 export const sampadaName= "Sampada Acharya";
+
+export const sampadaLeadershipText = "Leadership, to me, is about creating spaces where people feel seen, supported, and inspired to grow. I believe impactful leadership goes beyond managing projects — it’s about fostering trust, collaboration, and community. Over the years, I have had the privilege of leading and contributing to initiatives that center on mentorship, community building, and advancing equity in engineering. These experiences have shaped my leadership philosophy: build bridges, amplify voices, and create opportunities for collective growth. As I continue my journey as a researcher, I carry forward a commitment to empowering people as much as advancing research.";

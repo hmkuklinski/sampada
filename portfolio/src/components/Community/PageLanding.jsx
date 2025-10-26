@@ -1,15 +1,16 @@
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import { sampadaLeadershipText } from '../../sampadaInfo';
 
-export default function PageLanding({text=null}) {
+export default function PageLanding() {
      const typedRef = useRef(null);
     useEffect(() => {
         if (typedRef.current) {
             const typedStrings = [
                 "Sampada Acharya",
-                "An Amazing Person",
-                "A Leader",
-                "An Innovative Researcher"
+                // "Innovating through community"
+                // "shaping communities that spark discovery and innovation. ",
+                
             ];
             const typed = new Typed(typedRef.current, {
                 strings: typedStrings,
@@ -35,15 +36,7 @@ export default function PageLanding({text=null}) {
 
     const landingText = (
         <div className="landing-text">
-            {text && text}
-            {!text && "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi aliquid fugit minima impedit doloremque amet repudiandae perferendis tempora, recusandae iure delectus neque voluptate consequatur, odio architecto omnis, fuga obcaecati?"}
-        </div>
-    );
-
-
-    const landingKeywords = (
-        <div className="landing-keywords">
-            <b>Keywords: </b> keyword, keyword, keyword, keyword
+            {sampadaLeadershipText}
         </div>
     );
 
@@ -52,7 +45,6 @@ export default function PageLanding({text=null}) {
             <div className="landing-information">
                 {typedHeader}
                 {landingText}
-                {landingKeywords}
             </div>
         </div>
     );

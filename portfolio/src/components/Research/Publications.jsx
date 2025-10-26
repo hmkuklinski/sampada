@@ -12,7 +12,7 @@ export default function Publications(){
                 <MyHeader title="My Publications" id="publications-header" />
                 <div className="current-content">
                     {sampadaPublications.map((project)=>(
-                        <Project photo={project.photo} title={project.id} description={project.info} link={project.link} subtitle={project.subtitle} tags={project.tags} status={project.status}/>
+                        <Project photo={project.photo} title={project.id} description={project.info} link={project.link} subtitle={project.subtitle} tags={project.tags} status={project.status} vidLink={project.vidLink} articleLink={project.articleLink}/>
                     ))}
                 </div>
             </div>

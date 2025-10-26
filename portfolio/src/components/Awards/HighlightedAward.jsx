@@ -16,9 +16,18 @@ export default function HighlightedAward({isMobile}){
                     <div className="highlight-subtitle">
                         <h4>{highlightAward.subtitle}</h4>
                     </div>
+                    <div className="project-link" id="highlight-links">
+                        <div className="project-link-div">
+                            <a href={highlightAward.presentation} target="_blank" rel="noopener noreferrer">Thesis<ion-icon name="chevron-forward-outline"></ion-icon></a>
+                        </div>
+                        <div className="project-link-div">
+                            <a href={highlightAward.ceremony} target="_blank" rel="noopener noreferrer">Ceremony<ion-icon name="chevron-forward-outline"></ion-icon></a>
+                        </div>
+                    </div>
                     <div className="highlight-desc">
                         <p>{highlightAward.desc}</p>
                     </div>
+                    
                 </div>
                 {!isMobile && sectDivider}
                 <div className="highlight-section">
