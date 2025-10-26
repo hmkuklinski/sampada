@@ -27,7 +27,7 @@ export default function NavBar(){
 
     const cvLi = ( 
         <li onClick={() => setShowHamburger(false)}>
-            <a href="/documents/Sampada Acharya CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            <a href="/documents/Sampada Acharya CV.pdf" download rel="noopener noreferrer">CV</a>
         </li>
     );
 
