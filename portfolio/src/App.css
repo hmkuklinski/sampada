@@ -1088,7 +1088,7 @@
   }
   #highlight-links{
     flex-direction: row;
-    margin: 0px;
+    margin: 15px;
   }
   .highlight-mini{
     align-items: center;
