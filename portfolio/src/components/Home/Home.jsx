@@ -8,7 +8,7 @@ export default function Home(){
             <div className="page-container">
                 <AboutLanding />
                 <MyHeader title="Background" id="background-header" />
-                <Timeline />
+                {/* <Timeline /> */}
             </div>
         </Layout>
     );
