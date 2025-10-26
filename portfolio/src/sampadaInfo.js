@@ -53,7 +53,7 @@ export const sampadaProjects = [
         subtitle:"Qin, Fang, Huai-Yu Cheng, Rachel Sneeringer, Maria Vlachostergiou, Sampada Acharya, Haolin Liu, Carmel Majidi,  Mohammad Islam, and Lining Yao. \"ExoForm: Shape Memory and Self-Fusing Semi-Rigid Wearables.\" In Extended  Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems, pp. 1-8. 2021. ",
         photo:"/assets/graphics/publications/sampada-publication2.png", 
         info:"Traditional orthotics are typically non-adjustable and non-reusable, requiring skilled professionals for customization. To address these issues, I developed a composite material combining polyborosiloxane, a room-temperature self-healing polymer, and functional fillers like multi-walled carbon nanotubes and eutectic alloy of indium and gallium. The optimized composite was integrated with a 4D-printed polylactic acid structure to form a smart, conformable, self-healable, reusable and cost-effective medical brace that could be easily customized for each patient without requiring skilled medical professionals, making it cost-effective and accessible, even in remote settings.  This work was presented in the 2021 CHI Conference on Human Factors in Computing Systems.  ", 
-        link:"/documents/Exoform PDF.pdf",
+        link:"/documents/exoform.pdf",
         articleLink:"https://dl.acm.org/doi/10.1145/3411763.3451818",
         vidLink:"/videos/Exoform Video.mp4",
         tags:"exoform"
