@@ -484,9 +484,10 @@
 /*holds the awards img, and main award info and subawards*/
 .highlighted-award{
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   margin-top: 3px;
+  height: auto;
   
 }
 .highlight-subtitle h4{
@@ -507,8 +508,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 3px;
-  padding:5px;
+  margin-top: 25px;
+  padding:8px;
   width:52%;
   height:auto;
 }
