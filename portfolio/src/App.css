@@ -98,6 +98,12 @@
 
 
 /* ------------------------- SAMPADA HOME PAGE ------------------------------------*/
+.page-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .page-landing{
   background-image: url("/public/assets/leadership/grace-hopper-sampada.jpg");
   background-size:cover;
@@ -148,14 +154,17 @@
   justify-content: flex-start;
   flex-direction: row;
   margin:40px 0px;
-  height: 700px;
+  height: auto;
 }
 .about-left{
   width:40%;
   margin-top: 25px;
 }
+.about-text p{
+  font-size: 17px;
+}
 .about-information{
-  height: 550px;
+  height: auto;
   width: 50%;
   text-align:justify;
 }
@@ -192,9 +201,9 @@
   justify-content:center;
   flex-direction:row;
   height:auto;
-  width: 100%;
+  width: 95%;
   padding: 6px;
-  /* margin-top: 50px; */
+  margin-top: 50px;
 }
 .timeline-information{
   padding: 8px;
