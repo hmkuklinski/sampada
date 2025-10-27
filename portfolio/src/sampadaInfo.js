@@ -2,10 +2,11 @@ export const sampadaNav= [
     {id:"home", text:"Home", link:"/"},
     //remember to change the navbar slice from (0,2) to (0,3) when adding this section!
     // {id:"projects", text:"Projects", link:"/projects"}, 
-    {id:"publications", text:"Publications", link:"/publications"},
+    {id:"research", text:"Research", link:"/research"},
     {id:"thesis", text:"Thesis", link:"/thesis"},
-    
 ];
+
+export const sampadaCV= "https://drive.google.com/file/d/1J2oxeLe1eRib3b4D8hJssFgI1p2LgeuL/view?usp=drive_link";
 export const sampadaMobile = [
     {id:"awards", text:"Awards", link:"/awards"},
     {id:"certifications", text:"Certifications", link:"/certifications"},
@@ -33,17 +34,17 @@ export const sampadaProjects = [
     {
         id: "Gecko Adhesion Based Sea Star Crawler Robot", subtitle:"Acharya, Sampada*, Peter Roberts*, Tejas Rane, Raghav Singhal, Peize Hong, Viraj Ranade, Carmel Majidi,  Victoria Webster-Wood, and B. Reeja-Jayan.", photo:"../assets/graphics/publications/sampada-publication1.jpg", 
         info:"During my first project, I aimed to demonstrate the feasibility of a robotic system capable of amphibious adhesion and locomotion to navigate a wide range of environments. Thus, I worked on designing, fabricating and testing a cost-effective, nature-inspired soft robot with amphibious adhesion and locomotion capabilities to navigate multiple environments. By combining soft, structure-based, gecko-inspired adhesives with soft sea-star-shaped pneumatically actuated limbs I was able to create a soft crawler robot that could function in both wet and dry environments. I fabricated the gecko-inspired adhesive material using a cost-effective casting technique and characterized its adhesion in both dry and wet environments. I then collaborated with 3 different labs to lead a multidisciplinary team to integrate the adhesive material with a soft, 5-limbed sea-star inspired robot, designed and fabricated in-house and tested the robot’s amphibious locomotion performance. This soft robot is the first of its kind to use soft, gecko-inspired adhesive structure for locomotion on inclines up to 25° and adhesion on inclines up to 50° on both dry and wet surfaces. A paper based on this work was published in the Frontiers in Robotics and AI journal and I also presented this work at the APS 2024 March Meeting.", 
-        link:"https://drive.google.com/file/d/1hYDgQhlolySEOT-Tl1oktWphae0Jf5SW/view?usp=drive_web", 
+        link:"https://drive.google.com/file/d/1zeJBGVitgoOtesDVrvy829j0f1lS_jBT/view?usp=drive_link", 
         articleLink:"https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2023.1209202/full", 
-        vidLink:"/videos/Gecko Video.MP4",
-        tags:"tag1"
+        vidLink:"https://drive.google.com/file/d/1HPhpAC_PoILFgFr4ogS2wAqB70pThLPC/view?usp=drive_link",
+        tags:"gecko"
     },
     {
         id: "Making the Case for Scaling up Microwave Sintering of  Ceramics.", 
         subtitle:"Aman, Bashu, Sampada Acharya, and B. Reeja-Jayan. \"Making the Case for Scaling up Microwave Sintering of  Ceramics.\" Advanced Engineering Materials 2302065 (2024)", 
         photo:"/assets/graphics/publications/sampada-publication3.jpg", 
         info:"Microwave sintering of ceramics, first explored in the1960s, is gaining renewed attention due to its lower energy consumption and reduced carbon footprint compared to conventional heating methods. Despite its advantages—such as contactless operation and geometric flexibility—scaling the process for industrial use remains challenging, primarily due to complex multiscale and multiphysics interactions during microwave coupling. However, recent advances in computational modeling, real-time control systems, materials characterization, and software tools present new opportunities to overcome these limitations. These innovations can enable precise understanding and management of processing heterogeneities, making scale-up more feasible. Additionally, the rapid rise of additive manufacturing intensifies the need for adaptable, energy-efficient sintering technologies that support near-net-shape fabrication. Microwave sintering, when refined and scaled, holds significant potential to revolutionize ceramic manufacturing for high-performance applications in medical, automotive, and aerospace sectors—supporting sustainability and design complexity in next-generation engineered materials.", 
-        link:"/documents/Ceramics PDF.pdf",
+        link:"https://drive.google.com/file/d/1tlhxv1fkt918tvyV08RE2mjEtYEZqnoS/view?usp=drive_link",
         articleLink:"https://advanced.onlinelibrary.wiley.com/doi/10.1002/adem.202302065",
         vidLink:"",
         tags:"ceramics"
@@ -53,9 +54,9 @@ export const sampadaProjects = [
         subtitle:"Qin, Fang, Huai-Yu Cheng, Rachel Sneeringer, Maria Vlachostergiou, Sampada Acharya, Haolin Liu, Carmel Majidi,  Mohammad Islam, and Lining Yao. \"ExoForm: Shape Memory and Self-Fusing Semi-Rigid Wearables.\" In Extended  Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems, pp. 1-8. 2021. ",
         photo:"/assets/graphics/publications/sampada-publication2.png", 
         info:"Traditional orthotics are typically non-adjustable and non-reusable, requiring skilled professionals for customization. To address these issues, I developed a composite material combining polyborosiloxane, a room-temperature self-healing polymer, and functional fillers like multi-walled carbon nanotubes and eutectic alloy of indium and gallium. The optimized composite was integrated with a 4D-printed polylactic acid structure to form a smart, conformable, self-healable, reusable and cost-effective medical brace that could be easily customized for each patient without requiring skilled medical professionals, making it cost-effective and accessible, even in remote settings.  This work was presented in the 2021 CHI Conference on Human Factors in Computing Systems.  ", 
-        link:"/documents/exoform.pdf",
+        link:"https://drive.google.com/file/d/1bBcpf6qFwwvfBlYPbo84Q3gQfNVnz1W-/view?usp=drive_link",
         articleLink:"https://dl.acm.org/doi/10.1145/3411763.3451818",
-        vidLink:"/videos/Exoform Video.mp4",
+        vidLink:"https://drive.google.com/file/d/1Knrl7ZeUUgkCgpgGNvSEJUeDNa2wy3uv/view?usp=drive_link",
         tags:"exoform"
     }, 
     
@@ -123,11 +124,14 @@ export const meritAwards = [
 //-------- SAMPADA'S CERTIFICATIONS ---------
 //{id:"", name:"", imgsrc:"", obtained:"", expired:""}
 export const sampadaCerts =[
-    {id:"cert1", name:"Working with Mice in Research Settings", certPdf:"/certifications/Working with Mice in Research Settings.pdf", obtained:"October 15, 2025", expired:"October 15, 2028", canExpire:true},
-    {id:"cert2", name:"Working with Rats in Research Settings", certPdf:"/certifications/Working with Rats in Research Settings.pdf", obtained:"October 15, 2025", expired:"October 15, 2028", canExpire:true},
-    {id:"cert3", name:"Biomedical Responsible Code of Conduct", certPdf:"/certifications/Biomedical Responsible Code of Conduct.pdf", obtained:"October 14, 2025", expired:"N/A", canExpire:false},
-    {id:"cert4", name:"Biomedical Research- Basic Refresher", certPdf:"/certifications/Biomedical Research - Basic_Refresher.pdf", obtained:"October 14, 2025", expired:"October 14, 2028", canExpire:true},
-    {id:"cert5", name:"Working with the IACUC- Investigators, Staff, Students", certPdf:"/certifications/Working with the IACUC - Investigators _ Staff _ Students.pdf", obtained:"October 14, 2025", expired:"October 14, 2028", canExpire:true},
+    {id:"mice", name:"Working with Mice in Research Settings", certPdf:"https://drive.google.com/file/d/13d_GDrzG22YkPitvgUJ2yytiqczexByO/view?usp=drive_link", obtained:"October 15, 2025", expired:"October 15, 2028", canExpire:true, verify:"https://www.citiprogram.org/verify/?wbb9993b5-092c-4fb1-b59a-d395dfa71f3d-72667161"},
+    {id:"rats", name:"Working with Rats in Research Settings", certPdf:"https://drive.google.com/file/d/11s3CuyjpyZSnrEkRptrP5iYCJ0yxo6TY/view?usp=drive_link", obtained:"October 15, 2025", expired:"October 15, 2028", canExpire:true, verify:"https://www.citiprogram.org/verify/?w1fc66c03-d0af-48ac-82c9-12a54d4fb3d3-72667162"},
+    {id:"miceandrats", name:"Reducing Pain and Distress in Laboratory Mice and Rats", certPdf:"https://drive.google.com/file/d/14T9IHuWHBcm4ZkHGFf00a1ignnD35scQ/view?usp=drive_link",obtained:"October 15, 2025", expired:"October 15, 2028", canExpire:true, verify:"https://www.citiprogram.org/verify/?w8ea08cc0-56c8-4328-853e-748d7879c7ef-72667160"},
+    {id:"codeofconduct", name:"Biomedical Responsible Code of Conduct", certPdf:"https://drive.google.com/file/d/1VtS6zMIsAEicqMmIojLsWvgdROYOB2US/view?usp=drive_link", obtained:"October 14, 2025", expired:"N/A", canExpire:false, verify:"https://www.citiprogram.org/verify/?wefabd959-8e42-4ce6-af0b-a90dece9ed58-72667158"}, 
+    {id:"refresher", name:"Biomedical Research- Basic Refresher", certPdf:"https://drive.google.com/file/d/1wlftSkFp70HOYtYSGOdlEyPcSI8_CiO3/view?usp=drive_link", obtained:"October 14, 2025", expired:"October 14, 2028", canExpire:true, verify:"https://www.citiprogram.org/verify/?w27654405-50f1-4cb8-99aa-4e176dc4edbb-72667157"},
+    {id:"iacuc", name:"Working with the IACUC- Investigators, Staff, Students", certPdf:"https://drive.google.com/file/d/1hT71cd1NbzOUZ-KPZrTsfjQWELQpbNjj/view?usp=drive_link", obtained:"October 14, 2025", expired:"October 14, 2028", canExpire:true, verify:"https://www.citiprogram.org/verify/?w6c48b1ae-4fca-4847-96d6-f11cc679c779-72667159"},
+   
+
 ];
 
 //-------- SAMPADA LEADERSHIP ARTICLES -------

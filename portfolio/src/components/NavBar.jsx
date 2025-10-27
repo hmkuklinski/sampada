@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import {useState, useEffect} from "react";
-import { sampadaMobile, sampadaNav } from "../sampadaInfo";
+import { sampadaCV, sampadaMobile, sampadaNav } from "../sampadaInfo";
 export default function NavBar(){
     const [isMobile, setIsMobile] = useState(false);
     const [showHamburger, setShowHamburger]= useState(false);
@@ -27,7 +27,7 @@ export default function NavBar(){
 
     const cvLi = ( 
         <li onClick={() => setShowHamburger(false)}>
-            <a href="/documents/Sampada Acharya CV.pdf" download rel="noopener noreferrer">CV</a>
+            <a href={sampadaCV} download rel="noopener noreferrer">CV</a>
         </li>
     );
 
