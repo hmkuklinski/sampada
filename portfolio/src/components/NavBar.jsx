@@ -27,7 +27,7 @@ export default function NavBar(){
 
     const cvLi = ( 
         <li onClick={() => setShowHamburger(false)}>
-            <a href={sampadaCV} download rel="noopener noreferrer">CV</a>
+            <a href={sampadaCV} target="_blank" rel="noopener noreferrer">CV</a>
         </li>
     );
 
