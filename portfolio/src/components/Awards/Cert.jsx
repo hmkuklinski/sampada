@@ -6,7 +6,7 @@ export default function Cert({id, name, certPdf, obtained, expired, canExpire}){
                     <h2>{name}</h2>
                 </div>
                 <div className="cert-subtitle" id="cert-sub">
-                    <h4>Collaborative Institutitional Training Initiative</h4>
+                    <h4>Collaborative Institutitional Training Initiative Program</h4>
                     {canExpire && <h4>{obtained} -{expired} </h4>}
                     {!canExpire && <h4>{obtained}</h4>}
                 </div>
