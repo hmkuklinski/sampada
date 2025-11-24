@@ -21,7 +21,7 @@ export default function HighlightedAward({isMobile}){
     const awardLinks= (
         <div className="project-link" id="highlight-links">
             <div className="project-link-div">
-                <a href={highlightAward.presentation} target="_blank" rel="noopener noreferrer">Thesis<ion-icon name="chevron-forward-outline"></ion-icon></a>
+                <a href={highlightAward.presentation} target="_blank" rel="noopener noreferrer">Presentation<ion-icon name="chevron-forward-outline"></ion-icon></a>
             </div>
             <div className="project-link-div">
                 <a href={highlightAward.ceremony} target="_blank" rel="noopener noreferrer">Ceremony<ion-icon name="chevron-forward-outline"></ion-icon></a>
@@ -52,7 +52,7 @@ export default function HighlightedAward({isMobile}){
     const awardImg= (
         <div className="highlight-img">
             <img src={highlightAward.imgsrc} alt={highlightAward.id} />
-            {!isMobile && awardLinks}
+            {/* {!isMobile && awardLinks} */}
         </div>
     );
 
@@ -63,10 +63,11 @@ export default function HighlightedAward({isMobile}){
                 <div className="highlight-info">
                     {awardTitle}
                     {awardSubtitle}
-                    {awardDesc}
+                    {awardDesc}{awardLinks}
                 </div>
                 {sectDivider}
                 {threeDisplay}
+                
             </div>
         </div>
     );

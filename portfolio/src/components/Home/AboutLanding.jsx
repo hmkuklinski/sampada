@@ -1,4 +1,5 @@
 import Socials from './Socials';
+import Timeline from './Timeline';
 import { sampadaName, sampadaPhotoPaths } from '../../sampadaInfo';
 export default function AboutLanding(){
     return (
@@ -37,7 +38,9 @@ export default function AboutLanding(){
                         If our interests align, I'd love to connect and start a conversation.
                     </p>
                 </div>
+                <Timeline />
             </div>
+            
         </div>
     );
 }

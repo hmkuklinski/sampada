@@ -160,7 +160,7 @@
   width:40%;
   margin-top: 25px;
 }
-.about-text p{
+.about-text p, .timeline-information p{
   font-size: 17px;
 }
 .about-information{
@@ -195,11 +195,11 @@
 }
 
 /*------------------- timeline formatting -------------------*/
-.timeline-container{
+/* .timeline-container{
   display:flex;
   align-items:center;
   justify-content:center;
-  flex-direction:row;
+  flex-direction:column;
   height:auto;
   width: 95%;
   padding: 6px;
@@ -210,14 +210,21 @@
   text-align:justify;
   width: 60%;
   margin: 10px;
+} */
+.timeline-information{
+  text-align: justify;
 }
 .timeline-image{
-  width: 35%;
+  width: 100%;
   margin: 10px;
 }
 .timeline-image img{
   height: 100%;
   width: 100%;
+}
+#background-header{
+  position:relative;
+  left: 0%;
 }
 
 /* -------------------formatting for header- with underline and circle display-------------------*/
@@ -277,6 +284,9 @@
   margin: 0px 25px;
   height:100%;
 }
+.project-content{
+  width: 60%;
+}
 .cert-content{
   width: 100%;
   padding: 10px;
@@ -313,8 +323,8 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  width: 30%;
-  height: 250px;
+  width: 35%;
+  height: 100%;
   margin: 0px 15px;
 }
 .project-image img{
@@ -514,12 +524,12 @@
 .highlight-content{
   display:flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
-  margin-top: 25px;
-  padding:8px;
+  padding:4px;
   width:52%;
-  height:auto;
+  height:500px;
+  margin-top: 8px;
 }
 /*formatting for the highlighted award img*/
 .highlight-img{
@@ -528,7 +538,7 @@
   justify-content: center;
   flex-direction: column;
   width: 40%;
-  height: auto;
+  height:100%;
   margin: 10px;
   padding: 6px;
 }
@@ -546,6 +556,7 @@
   justify-content:center;
   flex-direction: row;
 }
+
 .highlight-mini{
   width: 30%;
   padding: 3px;
@@ -906,7 +917,7 @@
     background-color: transparent;
   }
   /*formatting for home landing*/
-  .about-container, .timeline-container{
+  .about-container{
     display:flex;
     align-items: center;
     justify-content: center;
@@ -946,10 +957,7 @@
     height: 100%;
   }
   .timeline-information{
-    padding: 8px;
     text-align:justify;
-    width: 90%;
-    margin: 10px;
   }
   /*individual projects/publications container formatting*/
   .project-container , .cert-container{
