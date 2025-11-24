@@ -475,8 +475,7 @@
 #thesis .header-wrapper {
   left: 0px;
   margin:15px;
-  padding: 10px;
-  width: 90%;
+  padding: 20px;
 }
 
 .certifications-container .header-wrapper{
@@ -788,6 +787,44 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   
+}
+/* ------------------- thesis formatting-------------------*/
+
+#thesis-title{
+  padding:0;
+}
+.thesis-subtitle{
+  margin: 10px;
+  padding: 5px;
+}
+.thesis-subtitle h4, .thesis-subtitle p{
+  margin:0;
+}
+.thesis-content{
+  padding: 3px;
+}
+
+.thesis-text{
+  margin: 0;
+  padding: 4px;
+}
+.thesis-text blockquote{
+  text-align:justify;
+  margin: 20px;
+}
+.thesis-citation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 90px;
+}
+.thesis-citation p{
+  font-size:15px;
+  padding: 4px;
+}
+.thesis-link{
+  margin-left: 40px;
 }
 
 
@@ -1136,6 +1173,22 @@
   }
   #simple-awards{
     margin: 14px 0px;
+  }
+  .thesis-citation{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6px;
+  }
+  .thesis-citation p{
+    font-size: 13px;
+  }
+  .thesis-degree{
+    padding: 8px;
+  }
+  .header-text{
+    font-size: 24px;
   }
   
 }
