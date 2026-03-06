@@ -17,7 +17,7 @@ export default function NewsEntry({title, date, prev, linkText, intro, after, fu
                 <div className="project-info">
                     <div className="project-text">
                         {intro}
-                        <a href={article} target="_blank" rel="noopener nonreferrer">{linkText}</a>
+                        <a href={article} target="_blank" rel="noopener noreferrer">{linkText}</a>
                         {after}
                         {prev}
                         <br></br>

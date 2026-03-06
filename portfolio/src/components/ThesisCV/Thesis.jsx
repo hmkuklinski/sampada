@@ -24,12 +24,12 @@ export default function Thesis(){
         </div>
     );
 
-    const supervisor = (
-        <div className="thesis-subtitle">
-            <strong>Thesis Supervisor:  </strong>
-            <p>Dr. Carmel Majidi</p>
-        </div>
-    );
+    // const supervisor = (
+    //     <div className="thesis-subtitle">
+    //         <strong>Thesis Supervisor:  </strong>
+    //         <p>Dr. Carmel Majidi</p>
+    //     </div>
+    // );
 
     const committee = (
         <div className="thesis-subtitle">
