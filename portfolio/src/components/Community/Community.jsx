@@ -46,7 +46,7 @@ export default function Community(){
         </div>
     );
 
-    const leadershipBlog = (
+    const leadershipBlog = ( 
         <div className="blog-container">
             {leadershipArticles.map((lead)=>(
                 <BlogEntry {...lead}/>
