@@ -582,7 +582,7 @@
 
 
 /* awards header formatting*/
-#merit-awards, #mobile-awards, #leadership-header, #conferences, #mentorship, #media, #articles{
+#merit-awards, #mobile-awards, #leadership-header, #conferences, #mentorship, #media, #articles, #news{
   width: 95%;
   left: 0px;
   padding: 12px;
@@ -624,6 +624,40 @@
 #simple-awards .project-text p{
   padding: 6px;
   margin:0;
+}
+
+
+/* -------------------------------NEWS FORMATTING -------------------------- */
+#all-news{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width:100%;
+}
+#all-news .project-images{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction:row;
+}
+#all-news{
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.project-image-left, .project-image-right{
+  max-width: 36%;
+}
+.project-image-left img, .project-image-right img{
+  width: 100%;
+  height: 100%;
+}
+#news-content{
+  width: 85%;
+}
+#news-content .project-text{
+  padding: 8px 0px;
 }
 
 /* ------------------blog editing----------------------------*/

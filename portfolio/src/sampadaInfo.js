@@ -88,7 +88,7 @@ export const sampadaPublications = [
 export const sampadaUpcomingPublications = [
     {id: "A study of interaction between soft nature-inspired  micropatterned (NIMP) surfaces and contaminants in the environment", authors: ["Sampada Acharya", "David Quinn", "Melinda Chen", "Carmel Majidi"], info:"", photo:"", subtitle:""},
     {id: "Multifunctional Liquid Crystal Elastomer Fibers for Muscle-Inspired Actuation", authors: [" Michael Vinciguerra", "Dinesh Patel", "Sampada Acharya","Kevin St. Luce", "Anthony Wertz", "Jose Hinojosa", "Michael Bennington", "Victoria Webster-Wood", "Lining Yao", "Carmel Majidi"], info:"", photo:"", subtitle:""},
-    {id:"Microwave Sintering of Binder-Jetted Alumina Ceramics: An Alternative Route to High- Temperature  Conventional Sintering", authors: ["Bashu Aman","Sampada Acharya", "Alex Gourley", "Tania Slawecki", "Dinesh Agrawal", "Pranjali D. Muley", "B. Reeja Jayan"], info:"", photo:"", subtitle:""}
+    {id:"Microwave Sintering of Binder-Jetted Alumina Ceramics: An Alternative Route to High- Temperature  Conventional Sintering [Manuscript Under Review]", authors: ["Bashu Aman","Sampada Acharya", "Alex Gourley", "Tania Slawecki", "Dinesh Agrawal", "Pranjali D. Muley", "B. Reeja Jayan"], info:"", photo:"", subtitle:""}
 ];
 
 //SAMPADA AWARDS- 3MINUTE
@@ -146,7 +146,7 @@ export const leadershipArticles = [
 ];
 
 export const mediaMentions = [
-    {id:"robot", title:"So tricky, a robot can do it", date:"Kaitlyn Landram ", prev:"Carnegie Mellon Researchers have taken inspiration from geckos to create a material that adheres to wet and dry surfaces, even on an incline.", imgsrc:"/assets/leadership/article1.png", article:"https://engineering.cmu.edu/news-events/news/2023/08/16-gass-crawler.html"},
+   {id:"robot", title:"So tricky, a robot can do it", date:"Kaitlyn Landram ", prev:"Carnegie Mellon Researchers have taken inspiration from geckos to create a material that adheres to wet and dry surfaces, even on an incline.", imgsrc:"/assets/leadership/article1.png", article:"https://engineering.cmu.edu/news-events/news/2023/08/16-gass-crawler.html"},
     {id:"ortho", title:"Resetting the standard in orthopedics", date:"Kaitlyn Landram", prev:"Exoform, a customizable, semi-rigid material with self-fusing edges has the potential to eliminate many of the doctors visits that go along with broken bones, not to mention help them heal faster.", imgsrc:"/assets/leadership/article2.png", article:"https://engineering.cmu.edu/news-events/news/2021/09/22-exoform.html"},
     {id:"3min", title:"Doctoral researchers shine in 3MT championship", date:"Sarah Bender", prev:"College of Engineering students explained complex research and its importance in under three minutes in the annual Three Minute Thesis competition.", imgsrc:"/assets/leadership/article3.png", article:"https://engineering.cmu.edu/news-events/news/2024/04/08-3mt.html"},
 ];
@@ -159,6 +159,12 @@ export const conferences= [
     {id:"gh2023", title:"Grace Hopper Celebration 2023", date:"September 2023", prev:"Represented the Mechanical Engineering department for its partication in the Grace Hopper celebration and managed interaction regarding graduate school experience with attendees.", imgsrc:"/assets/leadership/grace-hopper-conv.jpg", article:"https://www.linkedin.com/posts/sampada-acharya29_last-week-students-faculty-and-staff-had-activity-7115686298937352192-RdVR?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEVnSjEBRszvma9p2_dDwmqPofyH-W6QXFI"},
     {id:"research-sym", title:"CMU Department of MechE Master's Research Symposium", date:"2021", prev:"Presented \"Synthesis of Self-Healing Composites of Silicone and Liquid Metal\" by Acharya, Sampada et al. (2021)", imgsrc:"/assets/leadership/symp.jpg", article:""},
 ];
+
+export const news = [
+    {id:"robot_museum", title:"GASS Robot Placed In RIC'S Hall of Fame", date:"February 27, 2026", intro:"On Friday, Febraury 27, Carnegie Mellon University opened the brand-new ", linkText:"Robotics Innovation Center (RIC)", after:" in Hazelwood Green. ", prev:"Carnegie Mellon University's Gecko Adhesion Based Sea Star (GASS) Robot was placed in the Hall of Fame. The GASS Crawler Robot is an exciting step forward in soft robotics. Made in the Soft Machines Lab, led by Dr. Carmel Majidi, the robot was built by graduate students Sampada Acharya and Peter Roberts. It's a soft robot that moves like a sea star and sticks to surfaces like a gecko.", funding: "Funder: Carnegie Mellon University Center for Machine Learning and Health (CMLH).", 
+        imgLeft:"/assets/robots/museum.jpg", imgRight:"/assets/robots/museum_description.jpg", 
+    article:"https://engineering.cmu.edu/news-events/news/2026/03/02-ric-opening.html", linkedIn: "https://engineering.cmu.edu/news-events/news/2026/03/02-ric-opening.html"}
+]
 
 
 //-------- SAMPADA'S COMBINED INFORMATION HERE --------

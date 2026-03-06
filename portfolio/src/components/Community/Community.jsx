@@ -2,8 +2,9 @@ import Layout from "../Layout";
 import PageLanding from "./PageLanding";
 import BlogEntry from "./BlogEntry";
 import MyHeader from "../MyHeader";
-import { leadershipArticles, conferences, mediaMentions } from "../../sampadaInfo";
+import { leadershipArticles, conferences, mediaMentions, news } from "../../sampadaInfo";
 import {useEffect, useState} from "react";
+import NewsEntry from "./NewsEntry";
 
 export default function Community(){
     const [twitterLoaded, setTwitterLoaded] = useState(false);
@@ -34,9 +35,17 @@ export default function Community(){
     const conferencesHeading = <MyHeader title="Conferences" id="conferences" />;
     const mediaHeading = <MyHeader title="Media Mentions" id="media" />
     const articleHeading = <MyHeader title="Featured Articles" id="articles" />;
-    
+    const newsHeading = <MyHeader title="Updates" id="news" />;
 
     //different blog sections
+    const newsBlog = (
+        <div className="blog-container">
+            {news.map((newsArticle)=>(
+                <NewsEntry {...newsArticle} />
+            ))}
+        </div>
+    );
+
     const leadershipBlog = (
         <div className="blog-container">
             {leadershipArticles.map((lead)=>(
@@ -111,6 +120,13 @@ export default function Community(){
         </div>
     );
 
+    const newsContent = (
+        <div className="news-div">
+            {newsHeading}
+            {newsBlog}
+        </div>
+    );
+
     const leadershipContent = (
         <div className="community-div">
             {leadershipHeading}
@@ -140,6 +156,7 @@ export default function Community(){
     return (
         <Layout>
             <div className="page-container">
+                {newsContent}
                 {leadershipContent}
                 <PageLanding />
                 {conferencesContent}
